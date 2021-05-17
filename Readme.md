@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 - Студент: [Федор Клочков](https://up.htmlacademy.ru/htmlcss/31/user/845199).
-- Наставник: [Артур Трифонов] (https://htmlacademy.ru/profile/wrgraff).
+- Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
