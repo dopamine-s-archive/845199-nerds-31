@@ -35,13 +35,12 @@
           наб. Реки Карповки, <br />
           5 лит П, Санкт-Петербург<br />
           <a href="tel:+78005558628">+7 800 555-86-28</a><br />
-          <a href="mailto:#">напишите нам</a>
+          <a href="#">напишите нам</a>
         </p>
       </section>
     </main>
     <footer class="footer">
-      <!-- Подвал сайта -->
-      <section>
+           <section>
         <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
         <ul class="footer-social-links">
@@ -56,6 +55,39 @@
           </li>
         </ul>
       </section>
-    <footer></footer>
+    </footer>
+    <section>
+      <h2>Форма обратной связи</h2>
+      <p>Напишите нам</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name-field">Ваше имя:</label>
+          <input
+            id="name-field"
+            type="text"
+            placeholder="Имя Фамилия"
+            required
+          />
+        </p>
+        <p>
+          <label for="email-field">Ваш email:</label>
+          <input
+            id="email-field"
+            type="email"
+            placeholder="email@example.com"
+            required
+          />
+        </p>
+        <p>
+          <label for="feedback-form-textarea">Текст письма:</label>
+          <textarea
+            id="feedback-form-textarea"
+            placeholder="В свободной форме"
+          ></textarea>
+        </p>
+        <button type="submit">отправить</button>
+      </form>
+      <button type="button">закрыть</button>
+    </section>
   </body>
 </html>
