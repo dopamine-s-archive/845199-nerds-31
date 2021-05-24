@@ -40,28 +40,36 @@
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
-            <div>
-              <label for="price-range-start">От</label>
-              <input
-                type="range"
-                id="price-range-start"
-                min="0"
-                max="15000"
-                value="0"
-              />
-              <output name="price-range-start-output">0</output>
-            </div>
-            <div>
-              <label for="price-range-end">До</label>
-              <input
-                type="range"
-                id="price-range-end"
-                min="0"
-                max="15000"
-                value="10000"
-              />
-              <output name="price-range-end-output">15000</output>
-            </div>
+            <label for="price-range-start"></label>
+            <input
+              type="range"
+              id="price-range-start"
+              min="0"
+              max="15000"
+              value="0"
+            />
+            <label for="price-range-end"></label>
+            <input
+              type="range"
+              id="price-range-end"
+              min="0"
+              max="15000"
+              value="10000"
+            />
+            <label for="price-range-start-input">От</label>
+            <input
+              type="text"
+              id="price-range-start-input"
+              name="price-range-start-input"
+              placeholder="0"
+            />
+            <input
+              type="text"
+              name="price-range-end-input"
+              id="price-range-end-input"
+              placeholder="15000"
+            />
+            <label for="price-range-end-input">До</label>
           </fieldset>
           <fieldset>
             <legend>Сетка:</legend>
