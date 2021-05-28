@@ -55,7 +55,13 @@ background-color: var(--basic-light-gray);
   line-height: 30px;
   text-transform: uppercase;
 }
-.site-navigation-list {
+.site-navigation-list,
+ .our-feautures-list,
+ .our-feautures-buttons,
+ .services-list,
+ .about-works-list,
+ .our-clients-list,
+ .social-links {
   list-style: none;
 }
 .navigation-link a,
@@ -70,4 +76,24 @@ background-color: var(--basic-light-gray);
 .user-navigation a:focus{
   color: var(--basic-black);
   opacity: 0.3;
+}
+.our-features-subject {
+  font-size: 55px;
+  line-height: 55px;
+  text-align: left;
+}
+.our-features-description {
+  color: var(--basic-dark);
+  text-align: left;
+}
+.functional-link {
+  font: inherit;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border-radius: 3px;
+  text-align: center;
+  vertical-align:middle;
 }
