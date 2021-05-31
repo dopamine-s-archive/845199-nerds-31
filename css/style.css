@@ -227,3 +227,12 @@ img {
   font-weight: 700;
   vertical-align: text-top;
 }
+.our-clients-list img {
+  opacity: 0.2;
+}
+.our-clients-list img:hover {
+  opacity: 1;
+}
+.our-clients-list img:active {
+  opacity: 0.1;
+}
