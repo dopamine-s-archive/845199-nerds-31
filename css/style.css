@@ -1,21 +1,21 @@
 @font-face {
-  font-family: 'Roboto', 'Arial', sans-serif;
-  src: url('fonts/roboto.woff2') format('woff2'),
-  url('fonts/roboto.woff') format('woff');
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.woff2') format('woff2'),
+  url('../fonts/roboto.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Roboto', 'Arial', sans-serif;
-  src: url('fonts/robotomedium.woff2') format('woff2'),
-  url('fonts/robotomedium.woff') format('woff');
+  font-family: 'Roboto';
+  src: url('../fonts/robotomedium.woff2') format('woff2'),
+  url('../fonts/robotomedium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Roboto', 'Arial', sans-serif;
-  src: url('fonts/robotobold.woff2') format('woff2'),
-  url('fonts/robotobold.woff') format('woff');
+  font-family: 'Roboto';
+  src: url('../fonts/robotobold.woff2') format('woff2'),
+  url('../fonts/robotobold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -137,6 +137,7 @@ img {
 .service-item {
   background-position: center center;
   background-repeat: no-repeat;
+  text-align: left;
 }
 .service-item p {
   color: var(--basic-dark);
@@ -183,6 +184,12 @@ img {
   color: var(--basic-white-tranparent);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
+.about-us {
+  background-image: url(../img/nerds-about-img1.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  text-align: left;
+}
 .about-location {
   font-size: 45px;
   line-height: 45px;
@@ -195,7 +202,28 @@ img {
   color: var(--basic-dark);
   font-weight: 700;
   text-transform: uppercase;
+  text-align: left;
 }
 .about-works-item p {
   color: var(--basic-dark);
+}
+.about-numbers {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.about-numbers-list dt{
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+.about-numbers-list dd{
+  line-height: 18px;
+  color: var(--basic-dark);
+  text-align: left;
+}
+.about-numbers-list span {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+  vertical-align: text-top;
 }
