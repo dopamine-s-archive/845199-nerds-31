@@ -272,12 +272,6 @@ img {
   color: var(--basic-darker-gray);
   text-align: left;
 }
-.social-link img{
-  text-align: center;
-  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
-  background-size: 81px 81px;
-  border-radius: 41px;
-}
 .feedback-subject {
   font-size: 45px;
   line-height: 53px;
@@ -287,22 +281,23 @@ img {
   line-height: 18px;
   font-weight: 700;
 }
-.feedback-form input,
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
 .feedback-form textarea {
-  font:inherit;
+  font: inherit;
   line-height: 18px;
   color: var(--basic-darker-gray);
   opacity: 0.5;
 }
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-  font:inherit;
+  font: inherit;
   line-height: 18px;
   opacity: 1;
   color: var(--basic-darker-gray);
 }
-.feedback-form .email-field:focus:invalid {
-  font:inherit;
+.feedback-form .invalid-input:invalid {
+  font: inherit;
   line-height: 18px;
   color: var(--basic-darker-red);
 }

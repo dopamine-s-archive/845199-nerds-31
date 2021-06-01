@@ -171,22 +171,13 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
         <ul class="social-links">
           <li class="social-link">
-            <p>Вконтакте</p>
-            <a href="#">
-              <img src="img/vk-icon.svg">
-            </a>
+            <a href="#">Вконтакте</a>
           </li>
           <li class="social-link">
-            <p>Фейсбук</p>
-            <a href="#">
-              <img src="img/fb-icon.svg">
-            </a>
+            <a href="#">Фейсбук</a>
           </li>
           <li class="social-link">
-            <p>Инстаграм</p>
-            <a href="#">
-              <img src="img/insta-icon.svg">
-            </a>
+            <a href="#">Инстаграм</a>
           </li>
         </ul>
       </section>
@@ -197,15 +188,15 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="name-field">Ваше имя:</label>
-          <input id="name-field" type="text" placeholder="Имя Фамилия" required/>
+          <input class="invalid-input" id="name-field" type="text" placeholder="Имя Фамилия" required/>
         </p>
         <p>
           <label for="email-field">Ваш email:</label>
-          <input class="email-field" id="email-field" type="email" placeholder="email@example.com" required/>
+          <input class="invalid-input" id="email-field" type="email" placeholder="email@example.com" required/>
         </p>
         <p>
           <label for="form-textarea">Текст письма:</label>
-          <textarea id="form-textarea" placeholder="В свободной форме"></textarea>
+          <textarea id="form-textarea" placeholder="В свободной форме" required></textarea>
         </p>
         <button class="functional-link submit-button" type="submit">отправить</button>
       </form>
