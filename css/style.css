@@ -23,6 +23,7 @@
  --basic-white:#ffffff;
  --basic-white-tranparent: rgba(255,255,255, 0.3);
  --basic-light-gray: #eeeeee;
+ --basic-mild-gray: #e1e1e1;
  --basic-gray: #666666;
  --basic-dark-gray: #4d4d4d;
  --basic-darker-gray: #444444;
@@ -235,4 +236,73 @@ img {
 }
 .our-clients-list img:active {
   opacity: 0.1;
+}
+.contacts {
+  background-image: url(../img/adress-map-background.png);
+  background-position: top left;
+  background-repeat: no-repeat;
+  min-height: 416px;
+}
+.contact-us {
+  background-color: var(--basic-white);
+}
+.contact-us p:first-child {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contact-us p {
+  line-height: 18px;
+  color: var(--basic-gray);
+  text-align: left;
+}
+.contacts-phone {
+  font: inherit;
+  color: var(--basic-gray);
+}
+.footer-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: left;
+}
+.footer-information p {
+  line-height: 22px;
+  color: var(--basic-darker-gray);
+  text-align: left;
+}
+.social-link img{
+  text-align: center;
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  background-size: 81px 81px;
+  border-radius: 41px;
+}
+.feedback-subject {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: 700;
+}
+.feedback-form label {
+  line-height: 18px;
+  font-weight: 700;
+}
+.feedback-form input,
+.feedback-form textarea {
+  font:inherit;
+  line-height: 18px;
+  color: var(--basic-darker-gray);
+  opacity: 0.5;
+}
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  font:inherit;
+  line-height: 18px;
+  opacity: 1;
+  color: var(--basic-darker-gray);
+}
+.feedback-form .email-field:focus:invalid {
+  font:inherit;
+  line-height: 18px;
+  color: var(--basic-darker-red);
 }
