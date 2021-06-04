@@ -16,61 +16,61 @@
           <img src="img/index-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds»"/>
         </a>
         <ul class="site-navigation-list">
-          <li class="navigation-link">
+          <li class="navigation-item">
             <a href="#">Студия</a>
           </li>
-          <li class="navigation-link">
+          <li class="navigation-item">
             <a href="#">Клиенты</a>
           </li>
-          <li class="navigation-link">
+          <li class="navigation-item">
             <a href="catalog.html">Магазин</a>
           </li>
-          <li class="navigation-link">
+          <li class="navigation-item">
             <a href="#">Контакты</a>
           </li>
         </ul>
         <div class="user-navigation">
-        <a class="basket-link" href="#">Корзина</a>
+        <a class="cart-link" href="#">Корзина</a>
         </div>
       </nav>
       <h1>Интернет магазин «Nёrds»</h1>
       <section class="our-features-slider">
         <h2>Наши уникальные особенности</h2>
         <ul class="our-feautures-list">
-          <li class="our-features-item">
+          <li class="our-features-slide-1">
             <p class="our-features-subject">Долго, дорого,скрупулезно.</p>
             <p class="our-features-description">
               Математически выверенный дизайн для вашего сайта или мобильного
               приложения.
             </p>
-            <a class="functional-link slider-link" href="#">Узнать больше</a>
+            <a class="functional-link our-features-link" href="#">Узнать больше</a>
           </li>
-          <li class="our-features-item">
+          <li class="our-features-slide-2">
             <p class="our-features-subject">Любим математику как никто другой</p>
             <p class="our-features-description">
               Никакого креатива, только математические формулы для расчета
               идеальных пропорций
             </p>
-            <a class="functional-link slider-link" href="#">Узнать больше</a>
+            <a class="functional-link our-features-link" href="#">Узнать больше</a>
           </li>
-          <li class="our-features-item">
+          <li class="our-features-slide-3">
             <p class="our-features-subject">Только ночь,только хардкор</p>
             <p class="our-features-description">
               Работать днем, как все? Мы против этого. Ближе к полуночи работа
               только начинается.
             </p>
-            <a class="functional-link slider-link" href="#">Узнать больше</a>
+            <a class="functional-link our-features-link" href="#">Узнать больше</a>
           </li>
         </ul>
         <ul class="our-feautures-buttons">
-          <li class="our-features-button">
-            <button type="button">Особенность 1</button>
+          <li>
+            <button class="our-features-button" type="button">Особенность 1</button>
           </li>
-          <li class="our-features-button">
-            <button type="button">Особенность 2</button>
+          <li>
+            <button class="our-features-button" type="button">Особенность 2</button>
           </li>
-          <li class="our-features-button">
-            <button type="button">Особенность 3</button>
+          <li>
+            <button class="our-features-button" type="button">Особенность 3</button>
           </li>
         </ul>
       </section>
@@ -79,17 +79,17 @@
       <section class="services">
         <h2>Услуги</h2>
         <ul class="services-list">
-          <li class="service-item">
+          <li class="services-item web">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="functional-link services-link" href="#">заказать</a>
           </li>
-          <li class="service-item">
+          <li class="services-item apps">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="functional-link services-link" href="#">заказать</a>
           </li>
-          <li class="service-item">
+          <li class="services-item presentations">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="functional-link services-link" href="#">заказать</a>
@@ -100,8 +100,8 @@
         <h2>О нашей компании</h2>
           <div class="about-us">
             <h3>Кто мы</h3>
-              <p class="about-location">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-              <p class="about-principles">
+              <p class="about-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+              <p class="about-team">
                 Исповедуем принципы минимализма и чистоты. Ставим математический
                 расчет превыше креатива. Работаем не покладая рук, как роботы.
               </p>
@@ -188,11 +188,11 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="name-field">Ваше имя:</label>
-          <input class="invalid-input" id="name-field" type="text" placeholder="Имя Фамилия" required/>
+          <input class="input-validity-check" id="name-field" type="text" placeholder="Имя Фамилия" required/>
         </p>
         <p>
           <label for="email-field">Ваш email:</label>
-          <input class="invalid-input" id="email-field" type="email" placeholder="email@example.com" required/>
+          <input class="input-validity-check" id="email-field" type="email" placeholder="email@example.com" required/>
         </p>
         <p>
           <label for="form-textarea">Текст письма:</label>
