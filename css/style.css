@@ -98,7 +98,7 @@ img {
 .our-features-description {
   color: var(--basic-gray-900);
 }
-.functional-link {
+.functional-button {
   font-family: inherit;
   line-height: 18px;
   font-weight: 500;
@@ -242,6 +242,54 @@ img {
 .our-clients-list img:active {
   opacity: 0.1;
 }
+/*Стилизация каталога*/
+.main-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.filter ul {
+  list-style: none;
+}
+.price-filter input {
+  font-family: inherit;
+}
+.price-filter label,
+.price-filter input,
+.price-filter ::placeholder {
+  line-height: 22px;
+  color: var(--basic-gray-900);
+}
+.price-filter label {
+  text-transform: uppercase;
+}
+.price-filter input {
+  background-color: var(--basic-gray-100);
+}
+.grid-filter label,
+.features-filter label {
+  line-height: 20px;
+  color: var(--basic-gray-900);
+}
+.pagination-list {
+  list-style: none;
+}
+.pagination-item a {
+  line-height: 18px;
+  font-weight: 500;
+  color: var(--basic-black-900);
+  background-color: var(--basic-gray-100);
+}
+.pagination-item-current a {
+  background-color: var(--basic-white-100);
+}
+/*Стилизация каталога завершается. Дальше общая для всех страниц*/
 .contacts {
   background-image: url('../img/adress-map-background.png');
   background-position: top left;
@@ -262,7 +310,7 @@ img {
   text-align: left;
 }
 .contacts-phone {
-  font: inherit;
+  font-family: inherit;
   color: var(--basic-gray-400);
 }
 .footer-title {
