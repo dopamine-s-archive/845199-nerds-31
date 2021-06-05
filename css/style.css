@@ -24,12 +24,15 @@
  --basic-white-tranparent-300: rgba(255,255,255, 0.3);
  --basic-gray-100: #eeeeee;
  --basic-gray-200: #e1e1e1;
+ --basic-gray-300: #dfdfdf;
+ --basic-gray-350: #d5d5d5;
  --basic-gray-400: #666666;
  --basic-gray-500: #4d4d4d;
  --basic-gray-600: #444444;
  --basic-gray-900: #283136;
  --basic-black-900: #000000;
  --basic-black-tranparent-100: rgba(0, 1, 1, 0.1);
+ --basic-black-tranparent-300: rgba(0, 0, 0, 0.3);
  --basic-red-500: #fb565a;
  --basic-red-600: #e74246;
  --basic-red-700: #d7373b;
@@ -254,7 +257,8 @@ img {
   font-weight: 700;
   text-transform: uppercase;
 }
-.filter ul {
+.features-filter-list,
+.grid-filter-list {
   list-style: none;
 }
 .price-filter input {
@@ -277,6 +281,65 @@ img {
   line-height: 20px;
   color: var(--basic-gray-900);
 }
+.filter-button {
+  color: var(--basic-black-900);
+  background-color: var(--basic-gray-100);
+}
+.filter-button:hover {
+  background-color: var(--basic-gray-300);
+}
+.filter-button:active {
+  color: var(--basic-black-tranparent-300);
+  background-color: var(--basic-gray-350);
+  box-shadow: inset 0px 3px 0px var(--basic-black-tranparent-100);
+}
+.sort-container-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sort-list {
+  list-style: none;
+}
+.sort-list a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black-900);
+  opacity: 0.3;
+}
+.sort-list a:hover {
+  opacity: 0.6;
+}
+.sort-list a:focus,
+.sort-list a:active {
+  opacity: 1;
+}
+.templates-list {
+  list-style: none;
+}
+.template-item-info {
+  background-color: var(--basic-gray-100);
+}
+.templates-list h3 {
+  color: var(--basic-black-900);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.templates-list p {
+  color: var(--basic-gray-400);
+  line-height: 18px;
+}
+.template-item-button:hover {
+  background-color: var(--basic-red-600);
+}
+.template-item-button:active {
+  background-color: var(--basic-red-700);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
 .pagination-list {
   list-style: none;
 }
@@ -286,7 +349,17 @@ img {
   color: var(--basic-black-900);
   background-color: var(--basic-gray-100);
 }
-.pagination-item-current a {
+.pagination-item a:hover {
+  background-color: var(--basic-gray-300);
+}
+.pagination-item a:active {
+  color: var(--basic-black-tranparent-300);
+  background-color: var(--basic-gray-350);
+  box-shadow: inset 0px 3px 0px var(--basic-black-tranparent-100);
+}
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:active {
   background-color: var(--basic-white-100);
 }
 /*Стилизация каталога завершается. Дальше общая для всех страниц*/
