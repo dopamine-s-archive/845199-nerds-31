@@ -53,6 +53,11 @@ body {
   font-weight: 400;
   color: var(--basic-black-900);
   background-color: var(--basic-white-100);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 a {
   text-decoration: none;
@@ -62,8 +67,17 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
 .main-header {
   background-color: var(--basic-gray-100);
+  margin-bottom: 80px;
+}
+.title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
 }
 .main-navigation {
   font-weight: 500;
@@ -101,7 +115,7 @@ img {
 .our-features-description {
   color: var(--basic-gray-900);
 }
-.functional-button {
+.button {
   font-family: inherit;
   line-height: 18px;
   font-weight: 500;
@@ -245,39 +259,33 @@ img {
 .our-clients-list img:active {
   opacity: 0.1;
 }
-/*Стилизация каталога*/
-.main-title {
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-}
 .filter legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.features-filter-list,
-.grid-filter-list {
+.checkbox-filter-list,
+.radio-filter-list {
   list-style: none;
 }
-.price-filter input {
+.range-filter input {
   font-family: inherit;
 }
-.price-filter label,
-.price-filter input,
-.price-filter ::placeholder {
+.range-filter label,
+.range-filter input,
+.range-filter ::placeholder {
   line-height: 22px;
   color: var(--basic-gray-900);
 }
-.price-filter label {
+.range-filter label {
   text-transform: uppercase;
 }
-.price-filter input {
+.range-filter input {
   background-color: var(--basic-gray-100);
 }
-.grid-filter label,
-.features-filter label {
+.radio-filter label,
+.checkbox-filter label {
   line-height: 20px;
   color: var(--basic-gray-900);
 }
@@ -319,7 +327,7 @@ img {
 .templates-list {
   list-style: none;
 }
-.template-item-info {
+.templates-list li {
   background-color: var(--basic-gray-100);
 }
 .templates-list h3 {
@@ -362,7 +370,6 @@ img {
 .pagination-item-current a:active {
   background-color: var(--basic-white-100);
 }
-/*Стилизация каталога завершается. Дальше общая для всех страниц*/
 .contacts {
   background-image: url('../img/adress-map-background.png');
   background-position: top left;

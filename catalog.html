@@ -33,13 +33,13 @@
         <a class="cart-link" href="#">Корзина</a>
         </div>
       </nav>
-      <h1 class="main-title">Магазин готовых шаблонов</h1>
+      <h1 class="title">Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
       <section class="filter">
         <h2>Фильтр товаров</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="price-filter">
+          <fieldset class="range-filter">
             <legend>Стоимость</legend>
               <label for="price-range-start">От</label>
                 <input type="range" id="price-range-start" min="0" max="15000" value="0"/>
@@ -50,9 +50,9 @@
               <label for="price-range-end-input">До</label>
                 <input type="text" name="price-range-end-input" id="price-range-end-input" placeholder="15 000"/>
           </fieldset>
-          <fieldset class="grid-filter">
+          <fieldset class="radio-filter">
             <legend>Сетка:</legend>
-            <ul class="grid-filter-list">
+            <ul class="radio-filter-list">
               <li>
                 <input type="radio" name="grid-type" value="adaptive" id="grid-type-adaptive" checked/>
                   <label for="grid-type-adaptive">Адаптивная</label>
@@ -67,9 +67,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="features-filter">
+          <fieldset class="checkbox-filter">
             <legend>Особенности:</legend>
-            <ul class="features-filter-list">
+            <ul class="checkbox-filter-list">
               <li>
                 <input type="checkbox" name="feautures-slider" id="feautures-slider" checked/>
                   <label for="feautures-slider">Слайдер</label>
@@ -92,7 +92,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="functional-button filter-button" type="submit">Показать</button>
+          <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
       <section class="sort">
@@ -124,52 +124,40 @@
         <h2>Готовые шаблоны</h2>
         <ul class="templates-list">
           <li>
-            <div class="template-item-info">
               <a href="#"> <h3>Sedona</h3></a>
               <img src="img/catalog-template-sedona.png" width="358" height="578" alt=""/>
               <p>Информационный сайт для туристов</p>
-              <a class="functional-button template-item-button" href="#">9900₽</a>
-            </div>
+              <a class="button template-item-button" href="#">9900₽</a>
           </li>
           <li>
-            <div class="template-item-info">
               <a href="#"> <h3>Pink app</h3></a>
               <img src="img/catalog-template-pink.png" width="358" height="578" alt=""/>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="functional-button template-item-button" href="#">9900₽</a>
-            </div>
+              <a class="button template-item-button" href="#">9900₽</a>
           </li>
           <li>
-            <div class="template-item-info">
               <a href="#"> <h3>Barbershop</h3></a>
               <img src="img/catalog-template-barbershop.png" width="358" height="578" alt=""/>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a class="functional-button template-item-button" href="#">9900₽</a>
-            </div>
-          </li>
+              <a class="button template-item-button" href="#">9900₽</a>
+              </li>
           <li>
-            <div class="template-item-info">
               <a href="#"> <h3>Mishka</h3></a>
               <img src="img/catalog-template-mishka.png" width="358" height="578" alt=""/>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a class="functional-button template-item-button" href="#">9900₽</a>
-            </div>
+              <a class="button template-item-button" href="#">9900₽</a>
           </li>
           <li>
-            <div class="template-item-info">
               <a href="#"> <h3>A plus</h3></a>
               <img src="img/catalog-template-aplus.png" width="358" height="578" alt="" />
               <p>Лендинг курсов повышения квалификации</p>
-              <a class="functional-button template-item-button" href="#">9900₽</a>
-            </div>
+              <a class="button template-item-button" href="#">9900₽</a>
           </li>
           <li>
-            <div class="template-item-info">
               <a href="#"> <h3>Кваст</h3></a>
               <img src="img/catalog-template-kvast.png" width="358" height="578" alt="" />
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a class="functional-button template-item-button" href="#">9900₽</a>
-            </div>
+              <a class="button template-item-button" href="#">9900₽</a>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -183,7 +171,7 @@
             <a href="#">3</a>
           </li>
           <li class="pagination-item pagination-item-next">
-            <a class="functional-button" href="#">Следующая</a>
+            <a class="button" href="#">Следующая</a>
           </li>
         </ul>
       </section>
@@ -193,11 +181,11 @@
           <p>nёrds design studio</p>
           <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
           <p><a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
-          <p><a class="functional-button" href="#">напишите нам</a></p>
+          <p><a class="button" href="#">напишите нам</a></p>
         </div>
       </section>
     </main>
-<footer class="main-footer">
+    <footer class="main-footer">
       <section class="footer-information">
         <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
         <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -230,7 +218,7 @@
           <label for="form-textarea">Текст письма:</label>
           <textarea id="form-textarea" placeholder="В свободной форме" required></textarea>
         </p>
-        <button class="functional-button submit-button" type="submit">отправить</button>
+        <button class="button submit-button" type="submit">отправить</button>
       </form>
       <button class="modal-close" type="button">закрыть</button>
     </section>
