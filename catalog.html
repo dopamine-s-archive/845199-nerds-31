@@ -179,16 +179,18 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contact-us">
           <p>nёrds design studio</p>
-          <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p>наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</p>
           <p><a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
-          <p><a class="button" href="#">напишите нам</a></p>
+          <p><a class="button contacts-button" href="#">напишите нам</a></p>
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <section class="footer-information">
-        <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-text">
+          <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
         <ul class="social-links">
           <li class="social-link">
             <a href="#">Вконтакте</a>
@@ -202,22 +204,24 @@
         </ul>
       </section>
     </footer>
-     <section class="modal">
+    <section class="modal">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="feedback-subject">Напишите нам</p>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name-field">Ваше имя:</label>
-          <input class="input-validity-check" id="name-field" type="text" placeholder="Имя Фамилия" required/>
-        </p>
-        <p>
-          <label for="email-field">Ваш email:</label>
-          <input class="input-validity-check" id="email-field" type="email" placeholder="email@example.com" required/>
-        </p>
-        <p>
-          <label for="form-textarea">Текст письма:</label>
-          <textarea id="form-textarea" placeholder="В свободной форме" required></textarea>
-        </p>
+        <div class="feedback-input-block">
+          <p class="modal-name">
+            <label for="name-field">Ваше имя:</label>
+            <input class="input-validity-check" id="name-field" type="text" placeholder="Имя Фамилия" required/>
+          </p>
+          <p class="modal-email">
+            <label for="email-field">Ваш email:</label>
+            <input class="input-validity-check" id="email-field" type="email" placeholder="email@example.com" required/>
+          </p>
+          <p class="modal-textarea">
+            <label for="form-textarea">Текст письма:</label>
+            <textarea id="form-textarea" placeholder="В свободной форме" required></textarea>
+          </p>
+        </div>
         <button class="button submit-button" type="submit">отправить</button>
       </form>
       <button class="modal-close" type="button">закрыть</button>

@@ -100,38 +100,42 @@
         </ul>
       </section>
       <section class="about">
-        <h2 class="visually-hidden">О нашей компании</h2>
-          <div class="about-us">
-            <h3 class="visually-hidden">Кто мы</h3>
-              <p class="about-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-              <p class="about-team">
-                Исповедуем принципы минимализма и чистоты. Ставим математический
-                расчет превыше креатива. Работаем не покладая рук, как роботы.
-              </p>
-          </div>
-        <h3 class="visually-hidden">Что мы делаем</h3>
-        <p class="about-works">Выполняем заказы на разработку:</p>
-        <ul class="about-works-list">
-          <li class="about-works-item">
-            <p>Веб-сайтов любой сложности</p>
-          </li>
-          <li class="about-works-item">
-            <p>Мобильных приложений для iOS и Android</p>
-          </li>
-          <li class="about-works-item">
-            <p>Слайдшоу и видео для корпоративных презентаций</p>
-          </li>
-        </ul>
-        <h3 class="visually-hidden">Наша компания в точных цифрах</h3>
-        <p class="about-numbers">С 2004 года любим точность во всем:</p>
-        <dl class="about-numbers-list">
-          <dt>146<span>%</span></dt>
-          <dd>Уровень самоотдачи</dd>
-          <dt>100<span>%</span></dt>
-          <dd>Соблюдение сроков</dd>
-          <dt>50<span>%</span></dt>
-          <dd>Минимальная предоплата</dd>
-        </dl>
+        <div class="about-words">
+          <h2 class="visually-hidden">О нашей компании</h2>
+            <div class="about-us">
+              <h3 class="visually-hidden">Кто мы</h3>
+                <p class="about-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+                <p class="about-team">
+                  Исповедуем принципы минимализма и чистоты. Ставим математический
+                  расчет превыше креатива. Работаем не покладая рук, как роботы.
+                </p>
+            </div>
+          <h3 class="visually-hidden">Что мы делаем</h3>
+          <p class="about-works">Выполняем заказы на разработку:</p>
+          <ul class="about-works-list">
+            <li class="about-works-item">
+              <p>Веб-сайтов любой сложности</p>
+            </li>
+            <li class="about-works-item">
+              <p>Мобильных приложений для iOS и Android</p>
+            </li>
+            <li class="about-works-item">
+              <p>Слайдшоу и видео для корпоративных презентаций</p>
+            </li>
+          </ul>
+        </div>
+        <div class="about-numbers">
+          <h3 class="visually-hidden">Наша компания в точных цифрах</h3>
+          <p class="about-numbers-subject">С 2004 года любим точность во всем:</p>
+          <dl class="about-numbers-list">
+            <dt>146<span>%</span></dt>
+            <dd>Уровень самоотдачи</dd>
+            <dt>100<span>%</span></dt>
+            <dd>Соблюдение сроков</dd>
+            <dt>50<span>%</span></dt>
+            <dd>Минимальная предоплата</dd>
+          </dl>
+        </div>
       </section>
       <section class="our-clients">
         <h2 class="visually-hidden">Наши клиенты</h2>
@@ -162,16 +166,18 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contact-us">
           <p>nёrds design studio</p>
-          <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+          <p>наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</p>
           <p><a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
-          <p><a class="button" href="#">напишите нам</a></p>
+          <p><a class="button contacts-button" href="#">напишите нам</a></p>
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <section class="footer-information">
-        <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-text">
+          <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
         <ul class="social-links">
           <li class="social-link">
             <a href="#">Вконтакте</a>
@@ -189,18 +195,20 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="feedback-subject">Напишите нам</p>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="name-field">Ваше имя:</label>
-          <input class="input-validity-check" id="name-field" type="text" placeholder="Имя Фамилия" required/>
-        </p>
-        <p>
-          <label for="email-field">Ваш email:</label>
-          <input class="input-validity-check" id="email-field" type="email" placeholder="email@example.com" required/>
-        </p>
-        <p>
-          <label for="form-textarea">Текст письма:</label>
-          <textarea id="form-textarea" placeholder="В свободной форме" required></textarea>
-        </p>
+        <div class="feedback-input-block">
+          <p class="modal-name">
+            <label for="name-field">Ваше имя:</label>
+            <input class="input-validity-check" id="name-field" type="text" placeholder="Имя Фамилия" required/>
+          </p>
+          <p class="modal-email">
+            <label for="email-field">Ваш email:</label>
+            <input class="input-validity-check" id="email-field" type="email" placeholder="email@example.com" required/>
+          </p>
+          <p class="modal-textarea">
+            <label for="form-textarea">Текст письма:</label>
+            <textarea id="form-textarea" placeholder="В свободной форме" required></textarea>
+          </p>
+        </div>
         <button class="button submit-button" type="submit">отправить</button>
       </form>
       <button class="modal-close" type="button">закрыть</button>
