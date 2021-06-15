@@ -375,7 +375,6 @@ img {
   margin: 0;
   grid-template-columns: 120px 120px 120px;
   grid-template-rows: auto auto;
-  grid-column-gap: auto ;
   max-width: 360px;
 }
 .about-numbers-list dt {
