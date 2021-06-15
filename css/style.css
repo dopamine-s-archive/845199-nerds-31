@@ -756,12 +756,27 @@ margin-right: -10px;
   outline: 1px solid;
   outline-offset: -1px;
 }
+.feedback-input-block p {
+  margin: 0px;
+}
 .modal {
   width: 960 px;
   height: 590 px;
   margin: 0;
   padding: 0;
   padding-left: 100px;
+  outline: 1px solid;
+  outline-offset: -1px;
+}
+.modal-name {
+  outline: 1px solid;
+  outline-offset: -1px;
+}
+.modal-email {
+  outline: 1px solid;
+  outline-offset: -1px;
+}
+.modal-textarea {
   outline: 1px solid;
   outline-offset: -1px;
 }
