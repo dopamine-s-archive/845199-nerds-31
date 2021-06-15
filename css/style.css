@@ -87,8 +87,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .title {
   font-size: 55px;
@@ -115,15 +113,11 @@ img {
   grid-template-columns: 1fr 4fr 1fr;
   margin: 0;
   padding: 0;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .cart-link {
   display: grid;
   padding-top: 26px;
   justify-content: end;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .main-navigation a {
   color: var(--basic-black-900);
@@ -136,8 +130,6 @@ img {
   padding-top: 26px;
   margin-bottom: 0px;
   justify-content: center;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .navigation-item {
   margin-right: 45px;
@@ -174,15 +166,11 @@ img {
   font-weight: 500;
   margin: 0px;
   padding-right: 620px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .our-features-description {
   color: var(--basic-gray-900);
   margin-top: 25px;
   padding-right: 741px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .button {
   font-family: inherit;
@@ -221,8 +209,6 @@ img {
   padding-top: 78px;
   width: 1157px;
   min-height: 431px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .our-features-slide-1 {
   background-image: url('../img/index-slider-slide1.png');
@@ -242,8 +228,6 @@ img {
   width: 1160px;
   margin: 0 auto;
   padding: 0;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .services {
   margin: 0;
@@ -256,8 +240,6 @@ img {
   grid-column-gap: 100px;
   margin: 0;
   padding: 0;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .services-item {
   display: flex;
@@ -334,15 +316,11 @@ img {
   padding: 0;
   display: grid;
   grid-template-columns: 8fr 4fr;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .about-words {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  outline: 1px solid;
-  outline-offset: -1px;
   margin-top: 32px;
 }
 .about-numbers {
@@ -355,14 +333,10 @@ img {
   background-position: 77% 0%;
   background-repeat: no-repeat;
   margin-top: 37px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .about-numbers-subject {
   font-weight: 700;
   text-transform: uppercase;
-  outline: 1px solid;
-  outline-offset: -1px;
   margin-top: 245px;
   grid-column: 1/4;
   text-align: center;
@@ -373,8 +347,6 @@ img {
   line-height: 45px;
   font-weight: 500;
   margin-bottom: 32px;
-  outline: 1px solid;
-  outline-offset: -1px;
   padding-right: 60px;
 }
 .about-team {
@@ -386,22 +358,16 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 25px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .about-works-list {
   list-style: none;
   margin: 0px;
   padding:0px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .about-works-item p {
   color: var(--basic-gray-900);
   margin-top: 8px;
   margin-bottom: 24px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .about-numbers-list {
   display: grid;
@@ -416,8 +382,6 @@ img {
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
-  outline: 1px solid;
-  outline-offset: -1px;
   grid-row: 1/2;
   margin:0;
   padding: 0;
@@ -429,8 +393,6 @@ img {
   color: var(--basic-gray-900);
   margin-top: 11px;
   margin-left: 40px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .about-numbers-list :last-child {
 margin-right: -10px;
@@ -454,8 +416,6 @@ margin-right: -10px;
   padding: 0;
   display: flex;
   justify-content: space-between;
-  outline: 1px solid;
-  outline-offset: -1px;
   align-items: center;
   min-height: 184px;
 }
@@ -604,8 +564,6 @@ margin-right: -10px;
   margin-left: -140px;
   margin-bottom: 68px;
   padding: 0;
-  outline: 1px solid;
-  outline-offset: -1px;
  }
 .contact-us {
   background-color: var(--basic-white-100);
@@ -619,8 +577,6 @@ margin-right: -10px;
   padding-left: 50px;
   position: relative;
   top: 54px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .contact-us a {
   display: block;
@@ -669,8 +625,6 @@ margin-right: -10px;
   margin-bottom: 68px;
   grid-template-columns: 400px 660px;
   grid-template-rows: 81px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .footer-information p {
   line-height: 22px;
@@ -686,12 +640,6 @@ margin-right: -10px;
   order: -1;
   display: flex;
   justify-content: flex-start;
-  outline: 1px solid;
-  outline-offset: -1px;
-}
-.footer-text {
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .feedback-subject {
   font-size: 45px;
@@ -700,23 +648,16 @@ margin-right: -10px;
   margin: 0;
   margin-top: 63px;
   margin-bottom: 36px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .feedback-form {
   margin: 0;
   padding: 0;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .feedback-form label {
   line-height: 18px;
   font-weight: 700;
   display: block;
   margin-bottom: 9px;
-}
-.feedback-form label:last-of-type {
-  margin-top: 34px;
 }
 .feedback-form input
 .feedback-form textarea {
@@ -749,38 +690,27 @@ margin-right: -10px;
   display: flex;
   flex-wrap: wrap;
   width: 761px;
-  margin: 0;
-  padding: 0;
+  height: 256px;
   justify-content: space-between;
   align-items: flex-start;
-  outline: 1px solid;
-  outline-offset: -1px;
-}
-.feedback-input-block p {
-  margin: 0px;
 }
 .modal {
-  width: 960 px;
-  height: 590 px;
-  margin: 0;
-  padding: 0;
+  width: 960px;
+  height: 590px;
   padding-left: 100px;
-  outline: 1px solid;
-  outline-offset: -1px;
 }
 .modal-name {
-  outline: 1px solid;
-  outline-offset: -1px;
+  margin-top: 0;
+  margin-bottom:  34px;
 }
 .modal-email {
-  outline: 1px solid;
-  outline-offset: -1px;
+  margin-top: 0;
+  margin-bottom:  34px;
 }
 .modal-textarea {
-  outline: 1px solid;
-  outline-offset: -1px;
+  margin-top: 0;
 }
 .submit-button {
   padding: 17px 83px 15px 83px;
-  margin-top: 20px;
+  margin-top:  44px;
 }
