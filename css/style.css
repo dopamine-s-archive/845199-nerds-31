@@ -217,7 +217,6 @@ img {
   margin: 0 auto;
 }
 .services {
-  margin: 0;
   margin-bottom: 80px;
 }
 .services-list {
@@ -296,7 +295,6 @@ img {
   background-color: var(--basic-yellow-700);
 }
 .about {
-  margin: 0;
   margin-bottom: 49px;
   margin-top: 39px;
   padding: 0;
@@ -391,7 +389,6 @@ margin-right: -10px;
   top: -15px;
 }
 .our-clients {
-  margin: 0;
   padding: 0;
   margin-bottom: 80px;
 }
