@@ -171,13 +171,11 @@ img {
   text-align: center;
   vertical-align: middle;
   display: inline-block;
-  padding-top: 17px;
-  padding-bottom: 15px;
+  padding: 17px 40px 15px;
 }
 .our-features-link {
   margin-top: 38px;
-  padding-left: 54px;
-  padding-right: 54px;
+  min-width: 240px;
 }
 .our-features-link:hover {
   background-color: var(--basic-red-600);
@@ -562,8 +560,7 @@ margin-right: -10px;
   display: block;
 }
 .contacts-button {
-  padding-left: 44px;
-  padding-right: 44px;
+  min-width: 219px;
 }
 .contact-us p {
   line-height: 18px;
@@ -692,7 +689,6 @@ margin-right: -10px;
   margin-top: 0;
 }
 .submit-button {
-  padding-left: 83px;
-  padding-right: 83px;
   margin-top:  44px;
+  min-width: 259px;
 }
