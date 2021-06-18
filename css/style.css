@@ -45,7 +45,7 @@
 }
 body {
   min-width: 1200px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
@@ -77,16 +77,7 @@ img {
 .main-header {
   background-color: var(--basic-gray-100);
   margin-bottom: 80px;
-}
-.main-header-wrapper {
-  display: grid;
-  grid-template-rows: min-content 1fr;
-  width: 1160px;
-  margin-top: 49px;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
+  padding-top: 49px;
 }
 .title {
   font-size: 55px;
@@ -100,10 +91,8 @@ img {
   height: 1px;
   margin: -1px;
 }
-.main-header-logo {
-  display: grid;
-  padding: 0px;
-  margin: 0px;
+.main-header-logo img {
+  display: block;
 }
 .main-navigation {
   font-weight: 500;
@@ -111,13 +100,11 @@ img {
   text-transform: uppercase;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
-  margin: 0;
-  padding: 0;
 }
 .cart-link {
-  display: grid;
+  display: block;
   padding-top: 26px;
-  justify-content: end;
+  text-align: end;
 }
 .main-navigation a {
   color: var(--basic-black-900);
@@ -125,20 +112,20 @@ img {
 .site-navigation-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 26px;
   margin-bottom: 0px;
   justify-content: center;
 }
+.site-navigation-list a {
+  display: block;
+  padding-top: 26px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .navigation-item {
-  margin-right: 45px;
-}
-.navigation-item:first-child {
-  margin-left: auto;
-}
-.navigation-item:last-child {
-  margin-right: auto;
+  margin: 0 12px;
 }
 .main-header-logo img:hover {
   opacity: 0.7;
@@ -165,12 +152,12 @@ img {
   line-height: 55px;
   font-weight: 500;
   margin: 0px;
-  padding-right: 620px;
 }
 .our-features-description {
   color: var(--basic-gray-900);
   margin-top: 25px;
-  padding-right: 741px;
+  margin-bottom: 0;
+  padding-right: 101px;
 }
 .button {
   font-family: inherit;
@@ -183,15 +170,14 @@ img {
   border-radius: 3px;
   text-align: center;
   vertical-align: middle;
-}
-.our-features-link {
-  position: relative;
-  top: 38px;
+  display: inline-block;
   padding-top: 17px;
   padding-bottom: 15px;
+}
+.our-features-link {
+  margin-top: 38px;
   padding-left: 54px;
   padding-right: 54px;
-
 }
 .our-features-link:hover {
   background-color: var(--basic-red-600);
@@ -201,28 +187,30 @@ img {
   box-shadow: inset 0px 3px 0px var(--basic-black-tranparent-100);
   color: var(--basic-white-tranparent-300);
 }
-.our-features-slide-1,
-.our-features-slide-2,
-.our-features-slide-3 {
+.our-features-slide-design,
+.our-features-slide-calculations,
+.our-features-slide-workstyle {
   background-position: top right;
   background-repeat: no-repeat;
   padding-top: 78px;
-  width: 1157px;
   min-height: 431px;
+  padding-bottom: 80px;
+  padding-right: 620px;
 }
-.our-features-slide-1 {
-  background-image: url('../img/index-slider-slide1.png');
+.our-features-slide-design {
+  background-image: url('../img/index-slider-slide-design.png');
 }
-.our-features-slide-2 {
-  background-image: url('../img/index-slider-slide2.png');
+.our-features-slide-calculations {
+  background-image: url('../img/index-slider-slide-calculations.png');
   display: none;
 }
-.our-features-slide-3 {
-  background-image: url('../img/index-slider-slide3.png');
+.our-features-slide-workstyle {
+  background-image: url('../img/index-slider-slide-workstyle.png');
   display: none;
 }
 .our-feautures-buttons {
   list-style: none;
+  display: none;
 }
 .container {
   width: 1160px;
@@ -250,19 +238,20 @@ img {
   justify-content: space-between;
   height: 347px;
   width: 300px;
+  padding-top: 146px;
 }
 .services-item h3 {
-  padding-top: 147px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 .services-item p {
   color: var(--basic-gray-900);
   padding-right: 40px;
-  margin-top: -30px;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 .services-item.web {
   background-image: url('../img/our-features-illustration1.jpg');
@@ -274,7 +263,8 @@ img {
   background-image: url('../img/our-features-illustration3.jpg');
 }
 .services-link {
-  padding: 17px 40px 15px 39px;
+  padding-left: 39px;
+  padding-right: 40px;
   align-self: flex-start
 }
 .services-link:active {
@@ -581,7 +571,8 @@ margin-right: -10px;
   display: block;
 }
 .contacts-button {
-  padding:  17px 44px 15px 44px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 .contact-us p {
   line-height: 18px;
@@ -710,6 +701,7 @@ margin-right: -10px;
   margin-top: 0;
 }
 .submit-button {
-  padding: 17px 83px 15px 83px;
+  padding-left: 83px;
+  padding-right: 83px;
   margin-top:  44px;
 }

@@ -16,7 +16,7 @@ body * {
   --lightness: 65%;
 
   /* 5) Толщина обводки; */
-  --outline-width: 3px;
+  --outline-width: 1px;
 
   /* 6) Непрозрачность фонового цвета. */
   --bgc-opacity: 0.1;
