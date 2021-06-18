@@ -215,7 +215,6 @@ img {
 .container {
   width: 1160px;
   margin: 0 auto;
-  padding: 0;
 }
 .services {
   margin: 0;
@@ -223,21 +222,18 @@ img {
 }
 .services-list {
   list-style: none;
+  width: 1100px;
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 100px;
   margin: 0;
   padding: 0;
 }
 .services-item {
-  display: flex;
-  flex-direction: column;
   background-position: top left;
   background-repeat: no-repeat;
   text-align: left;
   justify-content: space-between;
-  height: 347px;
-  width: 300px;
   padding-top: 146px;
 }
 .services-item h3 {
@@ -245,12 +241,13 @@ img {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 0;
+  margin-bottom: 16px;
+  margin-top: 25px;
 }
 .services-item p {
   color: var(--basic-gray-900);
   padding-right: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 32px;
   margin-top: 0;
 }
 .services-item.web {
@@ -263,7 +260,7 @@ img {
   background-image: url('../img/our-features-illustration3.jpg');
 }
 .services-link {
-  padding-left: 39px;
+  padding-left: 40px;
   padding-right: 40px;
   align-self: flex-start
 }
@@ -299,7 +296,7 @@ img {
   background-color: var(--basic-yellow-700);
 }
 .about {
-  width: 1174px;
+  width: 1160px;
   margin: 0;
   margin-bottom: 49px;
   margin-top: 39px;
