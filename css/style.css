@@ -302,9 +302,6 @@ img {
 }
 .about-words {
   grid-column: span 8;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin-top: 32px;
 }
 .about-numbers {
@@ -335,17 +332,19 @@ img {
 .about-team {
   color: var(--basic-gray-900);
   padding-right: 80px;
+  margin-bottom: 40px;
 }
 .about-works {
   color: var(--basic-gray-900);
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 25px;
+  margin-bottom: 23px;
 }
 .about-works-list {
   list-style: none;
   margin: 0px;
-  padding:0px;
+  padding: 0px;
+  padding-left: 32px;
 }
 .about-works-item p {
   color: var(--basic-gray-900);
