@@ -187,26 +187,26 @@ img {
   box-shadow: inset 0px 3px 0px var(--basic-black-tranparent-100);
   color: var(--basic-white-tranparent-300);
 }
-.our-features-slide-design,
-.our-features-slide-calculations,
-.our-features-slide-workstyle {
+.our-features-slide {
   background-position: top right;
   background-repeat: no-repeat;
   padding-top: 78px;
   min-height: 431px;
   padding-bottom: 80px;
   padding-right: 620px;
+  display: none;
+}
+.our-features-slide-active {
+  display: block;
 }
 .our-features-slide-design {
   background-image: url('../img/index-slider-slide-design.png');
 }
 .our-features-slide-calculations {
   background-image: url('../img/index-slider-slide-calculations.png');
-  display: none;
 }
 .our-features-slide-workstyle {
   background-image: url('../img/index-slider-slide-workstyle.png');
-  display: none;
 }
 .our-feautures-buttons {
   list-style: none;
