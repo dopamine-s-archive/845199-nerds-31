@@ -296,7 +296,6 @@ img {
   background-color: var(--basic-yellow-700);
 }
 .about {
-  width: 1160px;
   margin: 0;
   margin-bottom: 49px;
   margin-top: 39px;
@@ -391,7 +390,6 @@ margin-right: -10px;
   top: -15px;
 }
 .our-clients {
-  width: 1159px;
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
