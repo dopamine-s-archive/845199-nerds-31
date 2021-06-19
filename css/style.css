@@ -387,24 +387,18 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 290px);
+  grid-template-rows: repeat(auto);
+}
+.our-clients-list li {
   min-height: 184px;
 }
-.our-clients-list li:first-child {
-  margin-left: 32px;
-  margin-right: 95px;
+.our-clients-list li:nth-child(4n+1) {
+  padding-left: 32px;
 }
-.our-clients-list li:last-child {
-  margin-right: 42px;
-  margin-left: 120px;
-}
-.our-clients-list li:nth-child(2) {
-  margin-right: auto;
-}
-.our-clients-list li:nth-child(3) {
-  margin-left: auto;
+.our-clients-list li:nth-child(4n+4) {
+  padding-right: 42px;
 }
 .our-clients-list img {
   opacity: 0.2;
