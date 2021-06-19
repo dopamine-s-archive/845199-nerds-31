@@ -307,20 +307,21 @@ img {
 .about-numbers {
   grid-column: span 4;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   background-image: url('../img/nerds-about-img1.png');
-  background-position: 77% 0%;
+  background-position: top center;
   background-repeat: no-repeat;
-  margin-top: 37px;
+  margin-top: 39px;
+  padding-top: 208px;
 }
 .about-numbers-subject {
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 245px;
-  grid-column: 1/4;
   text-align: center;
-  padding-left: 27px;
+  grid-column: span 4;
+  margin-top: 37px;
+  margin-bottom: 0;
 }
 .about-slogan {
   font-size: 45px;
@@ -356,34 +357,27 @@ img {
   padding: 0;
   margin: 0;
   grid-template-columns: 120px 120px 120px;
-  grid-template-rows: auto auto;
-  max-width: 360px;
+  grid-template-rows: 78px auto;
+  min-height: 111px;
 }
 .about-numbers-list dt {
   font-size: 45px;
   line-height: 64px;
   font-weight: 700;
   grid-row: 1/2;
-  margin:0;
-  padding: 0;
-  margin-top: 15px;
-  margin-left: 40px;
+  margin: 0;
 }
 .about-numbers-list dd {
+  margin: 0;
   line-height: 18px;
   color: var(--basic-gray-900);
-  margin-top: 11px;
-  margin-left: 40px;
 }
-.about-numbers-list :last-child {
-margin-right: -10px;
-}
+
 .about-numbers-list span {
   font-size: 26px;
   line-height: 40px;
   font-weight: 700;
-  position: relative;
-  top: -15px;
+  vertical-align: text-top;
 }
 .our-clients {
   padding: 0;
