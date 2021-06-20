@@ -7,36 +7,39 @@
     <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!---<link rel="stylesheet" href="css/outline.css">-->
     <title>Магазин готовых шаблонов дизайн-студии «Nёrds»</title>
   </head>
   <body class="page-body">
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/index-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds»"/>
-        </a>
-        <ul class="site-navigation-list">
-          <li class="navigation-item">
-            <a href="#">Студия</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Клиенты</a>
-          </li>
-          <li class="navigation-item">
-            <a href="catalog.html">Магазин</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <div class="user-navigation">
-        <a class="cart-link" href="#">Корзина</a>
-        </div>
-      </nav>
-      <h1 class="title">Магазин готовых шаблонов</h1>
+      <div class="container">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+              <img src="img/index-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds»"/>
+          </a>
+          <ul class="site-navigation-list">
+            <li class="navigation-item">
+              <a href="#">Студия</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#">Клиенты</a>
+            </li>
+            <li class="navigation-item">
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="user-navigation">
+            <a class="cart-link" href="#">Корзина</a>
+          </div>
+        </nav>
+        <h1 class="title">Магазин готовых шаблонов</h1>
+      </div>
     </header>
-    <main class="container">
-      <section class="filter">
+    <main>
+      <section class="filter container">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="range-filter">
@@ -95,7 +98,7 @@
           <button class="button filter-button" type="submit">Показать</button>
         </form>
       </section>
-      <section class="sort">
+      <section class="sort container">
         <h2 class="visually-hidden">Сортировка</h2>
         <div class="sort-container">
           <p class="sort-container-title">Сортировать</p>
@@ -120,7 +123,7 @@
           </div>
         </div>
       </section>
-      <section class="templates">
+      <section class="templates container">
         <h2 class="visually-hidden">Готовые шаблоны</h2>
         <ul class="templates-list">
           <li>
@@ -208,21 +211,19 @@
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="feedback-subject">Напишите нам</p>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="feedback-input-block">
-          <p class="modal-name">
-            <label for="name-field">Ваше имя:</label>
-            <input class="input-validity-check" id="name-field" type="text" placeholder="Имя Фамилия" required/>
-          </p>
-          <p class="modal-email">
-            <label for="email-field">Ваш email:</label>
-            <input class="input-validity-check" id="email-field" type="email" placeholder="email@example.com" required/>
-          </p>
-          <p class="modal-textarea">
-            <label for="form-textarea">Текст письма:</label>
-            <textarea id="form-textarea" placeholder="В свободной форме" required></textarea>
-          </p>
-        </div>
-        <button class="button submit-button" type="submit">отправить</button>
+        <p class="feedback-field text-field">
+          <label for="name-field">Ваше имя:</label>
+          <input id="name-field" type="text" placeholder="Имя Фамилия" required/>
+        </p>
+        <p class="feedback-field text-field">
+          <label for="email-field">Ваш email:</label>
+          <input id="email-field" type="email" placeholder="email@example.com" required/>
+        </p>
+        <p class="feedback-textarea text-field">
+          <label for="form-textarea">Текст письма:</label>
+          <textarea id="form-textarea" placeholder="В свободной форме" rows="5" required></textarea>
+        </p>
+        <button class="button feedback-button" type="submit">отправить</button>
       </form>
       <button class="modal-close" type="button">закрыть</button>
     </section>
