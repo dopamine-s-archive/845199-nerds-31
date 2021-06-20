@@ -388,17 +388,15 @@ img {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 290px);
-  grid-template-rows: repeat(auto);
-}
-.our-clients-list li {
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  align-items: center;
   min-height: 184px;
 }
-.our-clients-list li:nth-child(4n+1) {
-  padding-left: 32px;
-}
-.our-clients-list li:nth-child(4n+4) {
-  padding-right: 42px;
+.our-client-logo {
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 46px;
 }
 .our-clients-list img {
   opacity: 0.2;
