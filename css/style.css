@@ -407,6 +407,14 @@ img {
 .our-clients-list img:active {
   opacity: 0.1;
 }
+.catalog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 40px;
+}
+.filter {
+  grid-column: 1 / 4;
+}
 .filter legend {
   font-size: 18px;
   line-height: 30px;
@@ -440,6 +448,7 @@ img {
 .filter-button {
   color: var(--basic-black-900);
   background-color: var(--basic-gray-100);
+  width: 260px;
 }
 .filter-button:hover {
   background-color: var(--basic-gray-300);
@@ -448,6 +457,9 @@ img {
   color: var(--basic-black-tranparent-300);
   background-color: var(--basic-gray-350);
   box-shadow: inset 0px 3px 0px var(--basic-black-tranparent-100);
+}
+.templates-wrapper {
+  grid-column: 5 / -1;
 }
 .sort-container-title {
   font-size: 18px;
@@ -471,6 +483,10 @@ img {
 .sort-list a:focus,
 .sort-list a:active {
   opacity: 1;
+}
+.templates {
+  grid-column: 5 / -1;
+  grid-row: 2 / -1;
 }
 .templates-list {
   list-style: none;
