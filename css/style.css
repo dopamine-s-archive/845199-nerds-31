@@ -106,6 +106,7 @@ img {
 .cart-link {
   display: block;
   padding-top: 26px;
+  padding-bottom: 10px;
   text-align: end;
 }
 .main-navigation a {
@@ -125,6 +126,7 @@ img {
   padding-top: 26px;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 10px;
 }
 .navigation-item {
   margin: 0 12px;
@@ -535,33 +537,37 @@ img {
   background-color: var(--basic-white-100);
 }
 .contacts {
-  background-image: url('../img/adress-map-background.png');
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  margin-bottom: 75px;
   min-height: 416px;
-  margin: 0 auto;
-  margin-bottom: 68px;
-  padding: 0;
- }
+}
+.contacts-wrapper {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
 .contact-us {
   background-color: var(--basic-white-100);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 319px;
-  margin-left: 140px;
-  padding-left: 50px;
-  padding-right: 50px;
-  position: relative;
-  top: 54px;
+  width: 320px;
+  padding: 49px 50px 47px;
+}
+.contacts-map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
 }
 .contact-us a {
   display: block;
 }
 .contacts-button {
-  min-width: 219px;
+  min-width: 220px;
 }
 .contact-us p {
   line-height: 18px;
@@ -576,7 +582,6 @@ img {
   text-transform: uppercase;
   color: var(--basic-black-900);
   margin: 0px;
-  margin-top: 49px;
   margin-bottom: 23px;
 }
 .contact-us p:nth-child(2) {
@@ -584,7 +589,6 @@ img {
 }
 
 .contact-us p:last-child {
-  margin-bottom: 47px;
   margin-top: 37px;
 }
 .contacts-phone {
@@ -597,7 +601,6 @@ img {
   font-weight: 700;
   text-align: left;
   margin: 0;
-  padding-top: 7px;
 }
 .footer-information {
   display: grid;
