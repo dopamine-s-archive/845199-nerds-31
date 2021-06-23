@@ -310,9 +310,6 @@ img {
 }
 .about-numbers {
   grid-column: span 4;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
   background-image: url('../img/nerds-about-img1.png');
   background-position: top center;
   background-repeat: no-repeat;
@@ -323,9 +320,8 @@ img {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  grid-column: span 4;
   margin-top: 37px;
-  margin-bottom: 0;
+  margin-bottom: 31px;
 }
 .about-slogan {
   font-size: 45px;
