@@ -76,15 +76,24 @@ img {
 *::after {
   box-sizing: border-box;
 }
-.main-header {
+.header {
   background-color: var(--basic-gray-100);
-  margin-bottom: 80px;
   padding-top: 49px;
+}
+.main-header {
+  margin-bottom: 80px;
+}
+.catalog-header {
+  margin-bottom: 54px;
 }
 .title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+}
+.catalog-title {
+  margin: 78px 0 108px;
+  padding: 0;
 }
 .visually-hidden {
   position: absolute;
