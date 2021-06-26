@@ -581,16 +581,27 @@ img {
   display: grid;
   grid-template-columns: 4fr 4fr;
   grid-column-gap: 40px;
-  grid-row-gap: 30px;
   margin-bottom: 55px;
+  grid-row-gap: 70px;
 }
 .templates-list li {
+  width: 358px;
+  height: 578px;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.templates-list div {
   background-color: var(--basic-gray-100);
+  padding: 26px 50px 44px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
   width: 358px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: center;
+  flex-direction: column-reverse;
+
 }
 .templates-list h3 {
   color: var(--basic-black-900);
@@ -598,24 +609,21 @@ img {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 26px 0 12px 0;
-  padding: 0 50px;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
 }
 .templates-list p {
   color: var(--basic-gray-400);
   line-height: 18px;
   margin: 0;
   margin-bottom: 32px;
-  padding: 0 50px;
-}
-.templates-list img{
   order: -1;
 }
 .template-item-button {
-  margin: 0;
-  margin-bottom: 44px;
   align-self: center;
   width: 200px;
+  order: -2;
 }
 .template-item-button:hover {
   background-color: var(--basic-red-600);
