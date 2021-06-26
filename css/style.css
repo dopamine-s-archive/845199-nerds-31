@@ -415,15 +415,45 @@ img {
 .filter {
   grid-column: 1 / 4;
 }
+.range-filter {
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
+}
+.radio-filter {
+  margin: 0;
+  margin-bottom: 43px;
+  padding: 0;
+  padding-right: 15px;
+
+}
+.checkbox-filter {
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+  padding-right: 15px;
+}
+.range-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  width: 260px;
+}
 .filter legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.checkbox-filter-list,
-.radio-filter-list {
-  list-style: none;
+.range-filter legend {
+  margin-bottom: 48px;
+}
+.radio-filter legend {
+  margin-bottom: 13px;
+}
+.checkbox-filter legend {
+  margin-bottom: 14px;
 }
 .range-filter input {
   font-family: inherit;
@@ -436,14 +466,51 @@ img {
 }
 .range-filter label {
   text-transform: uppercase;
+  align-self: center;
+  margin-right: 11px;
 }
 .range-filter input {
   background-color: var(--basic-gray-100);
+  text-align: center;
+}
+.range-filter input:nth-of-type(1),
+.range-filter input:nth-of-type(2) {
+  height: 80px;
+  width: 130px;
+  margin-bottom: 14px;
+}
+.range-filter input:nth-of-type(3),
+.range-filter input:nth-of-type(4) {
+  height: 38px;
+  width: 80px;
+  padding: 0;
+}
+.range-filter input:nth-of-type(3) {
+  margin:0;
+  margin-right: 33px;
 }
 .radio-filter label,
 .checkbox-filter label {
   line-height: 20px;
   color: var(--basic-gray-900);
+}
+.checkbox-filter-list,
+.radio-filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.radio-filter-list li {
+  margin-bottom: 15px;
+}
+.radio-filter-list li:last-child {
+  margin-bottom: 0;
+}
+.checkbox-filter-list li {
+  margin-bottom: 16px;
+}
+.checkbox-filter-list li:last-child {
+  margin-bottom: 0;
 }
 .filter-button {
   color: var(--basic-black-900);
@@ -466,9 +533,28 @@ img {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+.sort-container {
+  display: grid;
+  grid-template-columns: 360px 360px;
+  grid-column-gap: 40px;
+  margin-bottom: 48px;
+}
+.sort-wrapper {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 300px 60px;
 }
 .sort-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .sort-list a {
   font-size: 14px;
@@ -490,9 +576,21 @@ img {
 }
 .templates-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  margin-bottom: 55px;
 }
 .templates-list li {
   background-color: var(--basic-gray-100);
+  width: 358px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
 }
 .templates-list h3 {
   color: var(--basic-black-900);
@@ -500,10 +598,24 @@ img {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 26px 0 12px 0;
+  padding: 0 50px;
 }
 .templates-list p {
   color: var(--basic-gray-400);
   line-height: 18px;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0 50px;
+}
+.templates-list img{
+  order: -1;
+}
+.template-item-button {
+  margin: 0;
+  margin-bottom: 44px;
+  align-self: center;
+  width: 200px;
 }
 .template-item-button:hover {
   background-color: var(--basic-red-600);
@@ -514,12 +626,28 @@ img {
 }
 .pagination-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+}
+.pagination-list li {
+  margin-right: 11px;
 }
 .pagination-item a {
   line-height: 18px;
   font-weight: 500;
   color: var(--basic-black-900);
   background-color: var(--basic-gray-100);
+}
+.pagination-button {
+  padding: 17px 20px 15px;
+  width: 50px;
+}
+.pagination-next-button {
+  min-width: 260px;
 }
 .pagination-item a:hover {
   background-color: var(--basic-gray-300);

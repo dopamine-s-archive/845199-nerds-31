@@ -44,15 +44,17 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="range-filter">
-              <legend>Стоимость</legend>
-                <label for="price-range-start">От</label>
-                  <input type="range" id="price-range-start" min="0" max="15000" value="0"/>
-               <label for="price-range-end">До</label>
-                  <input type="range" id="price-range-end" min="0" max="15000" value="10000"/>
-                <label for="price-range-start-input">От</label>
-                  <input type="text" id="price-range-start-input" name="price-range-start-input" placeholder="0"/>
-                <label for="price-range-end-input">До</label>
-                  <input type="text" name="price-range-end-input" id="price-range-end-input" placeholder="15 000"/>
+              <legend>Стоимость:</legend>
+                <div class="range-wrapper">
+                  <label class="visually-hidden" for="price-range-start">От</label>
+                    <input type="range" id="price-range-start" min="0" max="15000" value="0"/>
+                 <label class="visually-hidden" for="price-range-end">До</label>
+                    <input type="range" id="price-range-end" min="0" max="15000" value="10000"/>
+                  <label class="price-input-start-label" for="price-range-start-input">От</label>
+                    <input type="text" id="price-range-start-input" name="price-range-start-input" placeholder="0"/>
+                  <label class="price-input-end-label" for="price-range-end-input">До</label>
+                    <input type="text" name="price-range-end-input" id="price-range-end-input" placeholder="15 000"/>
+                </div>
             </fieldset>
             <fieldset class="radio-filter">
               <legend>Сетка:</legend>
@@ -95,7 +97,7 @@
                     <label for="features-busket">Корзина</label>
                 </li>
               </ul>
-           </fieldset>
+            </fieldset>
             <button class="button filter-button" type="submit">Показать</button>
           </form>
         </section>
@@ -103,25 +105,27 @@
           <section class="sort">
             <h2 class="visually-hidden">Сортировка</h2>
             <div class="sort-container">
-              <p class="sort-container-title">Сортировать</p>
-              <ul class="sort-list">
-                <li>
+              <p class="sort-container-title">Сортировать:</p>
+              <div class="sort-wrapper">
+                <ul class="sort-list">
+                  <li>
                   <a href="#">По цене</a>
-                </li>
-                <li>
-                  <a href="#">По типу</a>
-                </li>
-                <li>
-                  <a href="#">По названию</a>
-                </li>
-              </ul>
-              <div>
-                <p>
-                  <a href="#">по убыванию</a>
-                </p>
-                <p>
-                  <a href="#">по возрастанию</a>
-                </p>
+                  </li>
+                  <li>
+                    <a href="#">По типу</a>
+                  </li>
+                  <li>
+                    <a href="#">По названию</a>
+                  </li>
+                </ul>
+                <div>
+                  <p>
+                    <a class="visually-hidden" href="#">по убыванию</a>
+                  </p>
+                  <p>
+                    <a class="visually-hidden" href="#">по возрастанию</a>
+                  </p>
+                </div>
               </div>
             </div>
           </section>
@@ -144,13 +148,13 @@
                 <li>
                   <a href="#"> <h3>Barbershop</h3></a>
                   <img src="img/catalog-template-barbershop.png" width="358" height="578" alt=""/>
-                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <p>Сайт салона красоты.<br> Для мужчин, да.</p>
                   <a class="button template-item-button" href="#">9900₽</a>
                 </li>
                 <li>
                   <a href="#"> <h3>Mishka</h3></a>
                   <img src="img/catalog-template-mishka.png" width="358" height="578" alt=""/>
-                  <p>Интернет-магазин вязаных игрушек</p>
+                  <p>Интернет-магазин<br> вязаных игрушек</p>
                   <a class="button template-item-button" href="#">9900₽</a>
                 </li>
                 <li>
@@ -168,16 +172,16 @@
               </ul>
               <ul class="pagination-list">
                 <li class="pagination-item pagination-item-current">
-                  <a>1</a>
+                  <a class="button pagination-button">1</a>
                 </li>
                 <li class="pagination-item">
-                  <a href="#">2</a>
+                  <a class="button pagination-button" href="#">2</a>
                 </li>
                 <li class="pagination-item">
-                  <a href="#">3</a>
+                  <a class="button pagination-button" href="#">3</a>
                 </li>
                 <li class="pagination-item pagination-item-next">
-                  <a class="button" href="#">Следующая</a>
+                  <a class="button pagination-next-button" href="#">Следующая</a>
                 </li>
               </ul>
             </div>
@@ -186,11 +190,16 @@
       </div>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contact-us">
-          <p>nёrds design studio</p>
-          <p>наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</p>
-          <p><a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
-          <p><a class="button contacts-button" href="#">напишите нам</a></p>
+        <div class="contacts-wrapper container">
+          <img class="contacts-map" src="img/adress-map-background.png" width="1440" height="416" alr="Карта проезда">
+          <div class="contact-us">
+            <p>nёrds design studio</p>
+            <p>
+              наб. Реки Карповки, <br>5 лит П, Санкт-Петербург
+            </p>
+            <p><a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
+            <p><a class="button contacts-button" href="#">напишите нам</a></p>
+          </div>
         </div>
       </section>
     </main>
