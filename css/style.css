@@ -631,10 +631,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 60px;
 }
 .pagination-list li {
   margin-right: 11px;
+  margin-bottom: 30px;
+}
+.pagination-list li:last-child {
+  margin-bottom: 60px;
+  margin-right: 0;
 }
 .pagination-item a {
   line-height: 18px;
