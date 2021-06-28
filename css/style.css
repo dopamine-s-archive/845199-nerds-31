@@ -87,6 +87,7 @@ img {
   font-weight: 500;
   margin: 78px 0 108px;
   padding: 0;
+  text-align: center;
 }
 .visually-hidden {
   position: absolute;
