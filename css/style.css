@@ -179,13 +179,13 @@ img {
 }
 .our-features-description {
   color: var(--basic-gray-900);
-  margin-top: 25px;
-  margin-bottom: 39px;
-  padding-right: 105px;
-}
-.our-features-description:nth-child(2) {
   margin-top: 37px;
   margin-bottom: 27px;
+  padding-right: 105px;
+}
+.our-features-slide-design p:nth-of-type(2) {
+  margin-top: 26px;
+  margin-bottom: 39px;
 }
 .button {
   font-family: inherit;
@@ -226,6 +226,8 @@ img {
 }
 .our-features-slide-design {
   background-image: url('../img/index-slider-slide-design.png');
+  margin-top: -1px;
+  margin-bottom: 1px;
 }
 .our-features-slide-calculations {
   background-image: url('../img/index-slider-slide-calculations.png');
