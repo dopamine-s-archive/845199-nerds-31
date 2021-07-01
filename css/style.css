@@ -466,14 +466,14 @@ img {
 }
 .radio-filter {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 47px;
   padding: 0;
   padding-right: 15px;
   border: none;
 }
 .checkbox-filter {
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 50px;
   padding: 0;
   padding-right: 15px;
   border: none;
@@ -488,10 +488,10 @@ img {
   margin-bottom: 48px;
 }
 .radio-filter legend {
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 }
 .checkbox-filter legend {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .range-controls {
@@ -558,25 +558,38 @@ img {
 .checkbox-filter label {
   line-height: 20px;
   color: var(--basic-gray-900);
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+.radio-filter-input:disabled + label {
+  opacity: 0.3;
+}
+.checkbox-filter-input:disabled + label {
+  opacity: 0.3;
 }
 .checkbox-filter-list,
 .radio-filter-list {
   list-style: none;
   padding: 0;
+  padding-left: 36px;
   margin: 0;
 }
 .radio-filter-list li {
-  margin-bottom: 15px;
-  padding-left: 19px;
-  padding-top: 1px;
+  margin-bottom: 20px;
+}
+.radio-filter-list li:nth-last-child(2) {
+  margin-bottom: 18px;
 }
 .radio-filter-list li:last-child {
   margin-bottom: 0;
-  padding-top: 0;
 }
 .checkbox-filter-list li {
-  margin-bottom: 16px;
-  padding-left: 19px;
+  margin-bottom: 20px;
+}
+.checkbox-filter-list li:first-child {
+  margin-bottom: 19px;
 }
 .checkbox-filter-list li:last-child {
   margin-bottom: 0;
@@ -842,6 +855,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.social-link a {
+ padding: 27px;
 }
 .social-link:last-child {
   margin-right: 0;
