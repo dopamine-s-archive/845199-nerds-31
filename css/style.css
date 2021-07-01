@@ -508,7 +508,7 @@ img {
   background-color: var(--basic-gray-365);
 }
 .range-controls .bar {
-  width: 75%;
+  width: 70%;
   margin-left: 0%;
   height: 2px;
   background-color: var(--basic-green-500);
@@ -524,14 +524,14 @@ img {
   border: 10px solid var(--basic-white-100);
   background-color: var(--basic-gray-380);
   border-radius: 50%;
-  box-shadow: var(--basic-black-tranparent-50);
+  box-shadow:  0px 2px 1px var(--basic-black-tranparent-50);
   cursor: pointer;
 }
 .range-controls .toggle-min {
   left: 0px;
 }
 .range-controls .toggle-max {
-  left: 160px;
+  left: 142px;
 }
 .price-controls {
   display: flex;
