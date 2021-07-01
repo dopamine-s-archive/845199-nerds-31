@@ -543,7 +543,7 @@ img {
 }
 .price-controls input {
   width: 80px;
-  padding: 10px;
+  padding: 8px 10px;
   margin-left: 9px;
   text-align: center;
   color: var(--basic-gray-900);
@@ -552,6 +552,7 @@ img {
   background: var(--basic-gray-100);
   font-family: inherit;
   font-size: inherit;
+  line-height: 22px;
 }
 .radio-filter label,
 .checkbox-filter label {
