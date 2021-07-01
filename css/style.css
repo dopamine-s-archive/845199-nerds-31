@@ -27,12 +27,15 @@
  --basic-gray-300: #dfdfdf;
  --basic-gray-350: #d5d5d5;
  --basic-gray-360: #d7dcde;
+ --basic-gray-365: #d7dcdf;
  --basic-gray-370: #b4b9bb;
+ --basic-gray-380: #ababab;
  --basic-gray-400: #666666;
  --basic-gray-500: #4d4d4d;
  --basic-gray-600: #444444;
  --basic-gray-900: #283136;
  --basic-black-900: #000000;
+ --basic-black-tranparent-50:  rgba(0, 0, 0, 0.15);
  --basic-black-tranparent-100: rgba(0, 1, 1, 0.1);
  --basic-black-tranparent-300: rgba(0, 0, 0, 0.3);
  --basic-red-500: #fb565a;
@@ -85,7 +88,7 @@ img {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  margin: 77px 0 109px;
+  margin: 77px 0 108px;
   padding: 0;
   text-align: center;
 }
@@ -453,35 +456,33 @@ img {
 }
 .range-filter {
   margin: 0;
-  margin-bottom: 51px;
   padding: 0;
+  border: none;
+  margin-bottom: 54px;
+  margin-top: 1px;
+}
+.filter-item {
+  width: 260px;
 }
 .radio-filter {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
   padding: 0;
   padding-right: 15px;
-
+  border: none;
 }
 .checkbox-filter {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 47px;
   padding: 0;
   padding-right: 15px;
-}
-.range-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  width: 260px;
+  border: none;
 }
 .filter legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: -2px;
 }
 .range-filter legend {
   margin-bottom: 48px;
@@ -492,43 +493,67 @@ img {
 .checkbox-filter legend {
   margin-bottom: 14px;
 }
-.range-filter input {
-  font-family: inherit;
-}
-.range-filter label,
-.range-filter input,
-.range-filter ::placeholder {
-  line-height: 22px;
-  color: var(--basic-gray-900);
-}
-.range-filter label {
-  text-transform: uppercase;
-  align-self: center;
-  margin-right: 11px;
-}
-.range-filter input {
+
+.range-controls {
+  padding-top: 39px;
+  padding-bottom: 39px;
+  margin-bottom: 14px;
+  padding-right: 18px;
+  padding-left: 18px;
   background-color: var(--basic-gray-100);
-  text-align: center;
+  border-radius: 3px;
 }
-.range-filter input:nth-of-type(1),
-.range-filter input:nth-of-type(2) {
-  height: 80px;
-  width: 130px;
-  margin-bottom: 15px;
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--basic-gray-365);
 }
-.range-filter input:nth-of-type(3),
-.range-filter input:nth-of-type(4) {
-  height: 38px;
-  width: 80px;
+.range-controls .bar {
+  width: 75%;
+  margin-left: 0%;
+  height: 2px;
+  background-color: var(--basic-green-500);
+  position: relative;
+}
+.range-controls .toggle {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 4px;
+  height: 4px;
   padding: 0;
-  padding-bottom: 1px;
-  padding-left: 3px;
+  border: 10px solid var(--basic-white-100);
+  background-color: var(--basic-gray-380);
+  border-radius: 50%;
+  box-shadow: var(--basic-black-tranparent-50);
+  cursor: pointer;
 }
-.range-filter input:nth-of-type(3) {
-  margin-right: 33px;
+.range-controls .toggle-min {
+  left: 0px;
 }
-.price-input-start-label {
-  margin-left: -2px;
+.range-controls .toggle-max {
+  left: 160px;
+}
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+.price-controls label {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 22px;
+}
+.price-controls input {
+  width: 80px;
+  padding: 10px;
+  margin-left: 9px;
+  text-align: center;
+  color: var(--basic-gray-900);
+  border: none;
+  border-radius: 3px;
+  background: var(--basic-gray-100);
+  font-family: inherit;
+  font-size: inherit;
 }
 .radio-filter label,
 .checkbox-filter label {
@@ -543,7 +568,7 @@ img {
 }
 .radio-filter-list li {
   margin-bottom: 15px;
-  padding-left: 17px;
+  padding-left: 19px;
   padding-top: 1px;
 }
 .radio-filter-list li:last-child {
@@ -552,7 +577,7 @@ img {
 }
 .checkbox-filter-list li {
   margin-bottom: 16px;
-  padding-left: 17px;
+  padding-left: 19px;
 }
 .checkbox-filter-list li:last-child {
   margin-bottom: 0;
@@ -580,7 +605,6 @@ img {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
-  margin-top: -1px;
 }
 .sort-container {
   display: grid;
@@ -597,12 +621,12 @@ img {
 .sort-list {
   list-style: none;
   padding: 0;
-  margin-top: 2px;
+  margin-top: 3px;
   display: flex;
   flex-wrap: wrap;
 }
 .sort-list li {
-  margin-right: 15px;
+  margin-right: 16px;
 }
 .sort-list a {
   font-size: 14px;

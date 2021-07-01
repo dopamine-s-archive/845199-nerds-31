@@ -44,16 +44,26 @@
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="range-filter">
               <legend>Стоимость:</legend>
-                <div class="range-wrapper">
-                  <label class="visually-hidden" for="price-range-start">От</label>
-                  <input type="range" id="price-range-start" min="0" max="15000" value="0"/>
-                  <label class="visually-hidden" for="price-range-end">До</label>
-                  <input type="range" id="price-range-end" min="0" max="15000" value="10000"/>
-                  <label class="price-input-start-label" for="price-range-start-input">От</label>
-                  <input type="text" id="price-range-start-input" name="price-range-start-input" placeholder="0"/>
-                  <label class="price-input-end-label" for="price-range-end-input">До</label>
-                  <input type="text" name="price-range-end-input" id="price-range-end-input" placeholder="15 000"/>
+              <div class="filter-item">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar">
+                      <div class="toggle toggle-min">
+                      </div>
+                      <div class="toggle toggle-max">
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="text" name="max-price" value="15 000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="radio-filter">
               <legend>Сетка:</legend>
