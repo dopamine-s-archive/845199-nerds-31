@@ -29,6 +29,7 @@
  --basic-gray-360: #d7dcde;
  --basic-gray-365: #d7dcdf;
  --basic-gray-370: #b4b9bb;
+ --basic-gray-375: #c1c1c1;
  --basic-gray-380: #ababab;
  --basic-gray-400: #666666;
  --basic-gray-500: #4d4d4d;
@@ -169,6 +170,9 @@ img {
   color: var(--basic-black-900);
   opacity: 0.3;
 }
+.our-features-slider {
+  position: relative;
+}
 .our-feautures-list {
   list-style: none;
   margin: 0;
@@ -238,9 +242,42 @@ img {
 .our-features-slide-workstyle {
   background-image: url('../img/index-slider-slide-workstyle.png');
 }
-.our-feautures-buttons {
+.our-features-buttons {
+  position: absolute;
+  top: 316px;
+  left: 536px;
   list-style: none;
-  display: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+.our-features-buttons li {
+  margin-right: 17px;
+}
+.our-features-buttons li:last-child {
+  margin-right: 0;
+}
+.our-features-button {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: solid var(--basic-white-100);
+  background-color: var(--basic-white-100);
+  cursor: pointer;
+}
+.our-features-button-active:before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 4px);
+  top: calc(50% - 4px);
+  width: 8px;
+  height: 8px;
+  background-color:  inherit;
+  border: solid 2px var(--basic-gray-375);
+  border-radius: 50%;
 }
 .container {
   width: 1160px;
@@ -420,16 +457,30 @@ img {
 .our-clients {
   padding: 0;
   margin-bottom: 80px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: var(--basic-gray-100);
 }
 .our-clients-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 40px;
+}
+.our-client-logo {
+  position: relative;
+}
+.our-client-logo:not(:nth-child(4n+1)):before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: -21px;
+  height: 52px;
+  border: 1px solid var(--basic-gray-100);;
 }
 .our-clients-list a {
   display: flex;
