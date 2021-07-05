@@ -33,6 +33,7 @@
  --basic-gray-370: #b4b9bb;
  --basic-gray-375: #c1c1c1;
  --basic-gray-380: #ababab;
+ --basic-gray-390: #a6a6a6;
  --basic-gray-400: #666666;
  --basic-gray-500: #4d4d4d;
  --basic-gray-600: #444444;
@@ -788,6 +789,44 @@ img {
 .sort-list a:focus,
 .sort-list a:active {
   opacity: 1;
+}
+.sort-from-top-price,
+.sort-from-low-price {
+  position: relative;
+}
+.sort-from-top-price::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: 19px;
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-down-dir.svg);
+  opacity: 0.2;
+}
+.sort-from-low-price::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: 48px;
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-down-dir.svg);
+  transform: rotate(180deg);
+  opacity: 0.2;
+}
+.sort-from-top-price:hover::before,
+.sort-from-low-price:hover::before {
+  opacity: 1;
+}
+.sort-from-top-price:focus::before,
+.sort-from-top-price:active::before {
+  background-image: url(../img/icon-down-dir-active.svg);
+}
+.sort-from-low-price:focus::before,
+.sort-from-low-price:active::before {
+  background-image: url(../img/icon-down-dir-active.svg);
+  transform: rotate(180deg);
 }
 .templates {
   grid-column: 5 / -1;
