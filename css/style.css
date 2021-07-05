@@ -826,6 +826,19 @@ img {
   opacity: 0.12;
   border-radius: 5px 5px 0 0;
 }
+.templates-list li::after {
+  position: absolute;
+  content: "";
+  top: -27px;
+  left: 39px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50px;
+  background-color: var(--basic-white-100);
+  box-shadow:
+    -23px 0 0 -0 var(--basic-white-100),
+    23px 0 0 0 var(--basic-white-100);
+}
 .templates-list div {
   background-color: var(--basic-gray-100);
   padding: 26px 50px 44px;
