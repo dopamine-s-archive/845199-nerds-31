@@ -807,7 +807,10 @@ img {
 .templates-list h3:hover,
 .templates-list h3:focus {
   color: var(--basic-red-500);
-
+}
+.templates-list h3:active {
+  color: var(--basic-black-900);
+  opacity: 0.3
 }
 .templates-list div {
   opacity: 0;
