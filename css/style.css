@@ -832,6 +832,9 @@ img {
 .templates-list li:hover {
   box-shadow: 0px 6px 15px var(--basic-black-transparent-250);
 }
+.templates-list li:hover::before {
+  opacity: 1;
+}
 .templates-list h3:hover,
 .templates-list h3:focus {
   color: var(--basic-red-500);
