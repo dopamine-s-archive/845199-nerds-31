@@ -804,6 +804,11 @@ img {
   margin-bottom: 12px;
   padding: 0;
 }
+.templates-list h3:hover,
+.templates-list h3:focus {
+  color: var(--basic-red-500);
+
+}
 .templates-list div {
   opacity: 0;
 }
