@@ -21,9 +21,10 @@
 }
 :root {
  --basic-white-100:#ffffff;
- --basic-white-tranparent-300: rgba(255,255,255, 0.3);
+ --basic-white-transparent-300: rgba(255,255,255, 0.3);
  --basic-gray-100: #eeeeee;
  --basic-gray-200: #e1e1e1;
+ --basic-gray-250: #dbdbdb;
  --basic-gray-300: #dfdfdf;
  --basic-gray-350: #d5d5d5;
  --basic-gray-360: #d7dcde;
@@ -36,9 +37,10 @@
  --basic-gray-600: #444444;
  --basic-gray-900: #283136;
  --basic-black-900: #000000;
- --basic-black-tranparent-50:  rgba(0, 0, 0, 0.15);
- --basic-black-tranparent-100: rgba(0, 1, 1, 0.1);
- --basic-black-tranparent-300: rgba(0, 0, 0, 0.3);
+ --basic-black-transparent-10: rgba(0, 0, 0, 0.0001);
+ --basic-black-transparent-50:  rgba(0, 0, 0, 0.15);
+ --basic-black-transparent-100: rgba(0, 1, 1, 0.1);
+ --basic-black-transparent-300: rgba(0, 0, 0, 0.3);
  --basic-red-500: #fb565a;
  --basic-red-600: #e74246;
  --basic-red-700: #d7373b;
@@ -216,8 +218,8 @@ img {
 }
 .our-features-link:active {
   background-color: var(--basic-red-700);
-  box-shadow: inset 0px 3px 0px var(--basic-black-tranparent-100);
-  color: var(--basic-white-tranparent-300);
+  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-100);
+  color: var(--basic-white-transparent-300);
 }
 .our-features-slide {
   background-position: 99% 0%;
@@ -332,7 +334,7 @@ img {
   align-self: flex-start
 }
 .services-link:active {
-  color: var(--basic-white-tranparent-300);
+  color: var(--basic-white-transparent-300);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .web .services-link {
@@ -583,7 +585,7 @@ img {
   border: 8px solid var(--basic-white-100);
   background-color: var(--basic-gray-380);
   border-radius: 50%;
-  box-shadow:  0px 2px 1px 0 var(--basic-black-tranparent-50);
+  box-shadow:  0px 2px 1px 0 var(--basic-black-transparent-50);
   cursor: pointer;
 }
 .range-controls .toggle-min {
@@ -710,9 +712,9 @@ img {
   background-color: var(--basic-gray-300);
 }
 .filter-button:active {
-  color: var(--basic-black-tranparent-300);
+  color: var(--basic-black-transparent-300);
   background-color: var(--basic-gray-350);
-  box-shadow: inset 0px 3px 0px var(--basic-black-tranparent-100);
+  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-100);
 }
 .templates-wrapper {
   grid-column: 5 / -1;
@@ -860,6 +862,7 @@ img {
 .pagination-button {
   padding: 17px 20px 15px;
   width: 50px;
+  border-radius: 3px;
 }
 .pagination-next-button {
   min-width: 260px;
@@ -868,14 +871,18 @@ img {
   background-color: var(--basic-gray-300);
 }
 .pagination-item a:active {
-  color: var(--basic-black-tranparent-300);
+  color: var(--basic-black-transparent-300);
   background-color: var(--basic-gray-350);
-  box-shadow: inset 0px 3px 0px var(--basic-black-tranparent-100);
+  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-100);
 }
 .pagination-item-current a,
 .pagination-item-current a:hover,
 .pagination-item-current a:active {
-  background-color: var(--basic-white-100);
+  background-color: var(--basic-black-transparent-10);
+  border: 3px solid var(--basic-gray-250);
+  border-radius: 3px;
+  padding: 14px 17px 12px;
+  box-shadow: none;
 }
 .contacts {
   position: relative;
@@ -989,7 +996,7 @@ img {
 }
 .social-link:active {
   background-color: var(--basic-red-700);
-  box-shadow: inset 0px 3px 0px var(--basic-black-tranparent-100);
+  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-100);
 }
 .social-link:active img {
   opacity: 0.3;
