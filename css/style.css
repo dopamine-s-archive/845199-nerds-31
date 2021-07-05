@@ -23,6 +23,7 @@
  --basic-white-100:#ffffff;
  --basic-white-transparent-300: rgba(255,255,255, 0.3);
  --basic-gray-100: #eeeeee;
+ --basic-gray-150: #f2f2f2;
  --basic-gray-200: #e1e1e1;
  --basic-gray-250: #dbdbdb;
  --basic-gray-300: #dfdfdf;
@@ -40,6 +41,7 @@
  --basic-black-transparent-10: rgba(0, 0, 0, 0.0001);
  --basic-black-transparent-50:  rgba(0, 0, 0, 0.15);
  --basic-black-transparent-100: rgba(0, 1, 1, 0.1);
+ --basic-black-transparent-250: rgba(0, 0, 0, 0.25);
  --basic-black-transparent-300: rgba(0, 0, 0, 0.3);
  --basic-red-500: #fb565a;
  --basic-red-600: #e74246;
@@ -787,6 +789,21 @@ img {
   position: relative;
   padding: 0;
   margin: 0;
+  position: relative;
+  border: 1px solid var(--basic-gray-150);
+  border-radius: 0 0 5px 5px;
+  background-color: var(--basic-gray-150);
+}
+.templates-list li::before {
+  position: absolute;
+  content: "";
+  top: -40px;
+  left: -1px;
+  width: 360px;
+  height: 40px;
+  background-color: var(--basic-gray-500);
+  opacity: 0.12;
+  border-radius: 5px 5px 0 0;
 }
 .templates-list div {
   background-color: var(--basic-gray-100);
@@ -795,6 +812,11 @@ img {
   position: absolute;
   bottom: 0;
   width: 100%;
+  border-radius: 0 0 5px 5px;
+}
+.templates-list img {
+  border-radius: 0 0 5px 5px;
+  object-fit: contain;
 }
 .templates-list h3 {
   color: var(--basic-black-900);
@@ -805,6 +827,9 @@ img {
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
+}
+.templates-list li:hover {
+  box-shadow: 0px 6px 15px var(--basic-black-transparent-250);
 }
 .templates-list h3:hover,
 .templates-list h3:focus {
