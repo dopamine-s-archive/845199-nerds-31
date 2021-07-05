@@ -175,6 +175,27 @@ img {
   color: var(--basic-black-900);
   opacity: 0.3;
 }
+.current-site-page {
+  position: relative;
+}
+.current-site-page::after {
+  content: "";
+  width: 77%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 11px;
+  background-color: var(--basic-red-500);
+}
+.current-site-page.cart-link::after {
+  content: "";
+  width: 58%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 81px;
+  background-color: var(--basic-red-500);
+}
 .our-features-slider {
   position: relative;
 }
@@ -843,10 +864,10 @@ img {
   color: var(--basic-black-900);
   opacity: 0.3
 }
-.templates-list div {
+.templates-list-item div {
   opacity: 0;
 }
-.templates-list:hover div {
+.templates-list-item:hover div {
   opacity: 1;
 }
 .templates-list p {
