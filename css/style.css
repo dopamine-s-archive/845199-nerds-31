@@ -1133,8 +1133,7 @@ img {
   line-height: 18px;
   color: var(--basic-gray-600);
   opacity: 0.5;
-  border-color: var(--basic-gray-360);
-  border: 2px solid;
+  border: 2px solid var(--basic-gray-360);
   border-radius: 3px;
 }
 .feedback-form input {
