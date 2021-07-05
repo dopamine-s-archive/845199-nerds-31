@@ -420,6 +420,16 @@ img {
   margin-top: 8px;
   margin-bottom: 24px;
   padding-left: 4px;
+  position: relative;
+}
+.about-works-item p::before {
+  position: absolute;
+  top: 11px;
+  left: -32px;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red-500);
 }
 .about-numbers-list {
   display: grid;
@@ -794,6 +804,12 @@ img {
   margin-bottom: 12px;
   padding: 0;
 }
+.templates-list div {
+  opacity: 0;
+}
+.templates-list:hover div {
+  opacity: 1;
+}
 .templates-list p {
   color: var(--basic-gray-400);
   line-height: 18px;
@@ -1001,17 +1017,22 @@ img {
   color: var(--basic-gray-600);
   opacity: 0.5;
   border-color: var(--basic-gray-360);
+  border: 2px solid;
+  border-radius: 3px;
 }
 .feedback-form input {
   width: 100%;
   height: 50px;
   line-height: 18px;
   padding: 16px;
+  padding-left: 14px;
 }
 .feedback-form textarea {
   padding: 16px;
   width: 100%;
   height: 118px;
+  margin-left: 1px;
+  padding: 14px;
 }
 .feedback-form input:hover,
 .feedback-form textarea:hover {
@@ -1032,6 +1053,7 @@ img {
   height: 590px;
   padding-left: 100px;
   padding-right: 100px;
+  position: relative;
 }
 .text-field {
   margin:0;
@@ -1045,4 +1067,25 @@ img {
 .feedback-button {
   margin: 0;
   grid-column: span 3;
+}
+.modal-close {
+  position: absolute;
+  content: "";
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: inherit;
+  border: none;
+  opacity: 0.3;
+  cursor: pointer;
+}
+.modal-close:hover {
+  opacity: 1;
+}
+.modal-close:active {
+  opacity: 0.1;
 }
