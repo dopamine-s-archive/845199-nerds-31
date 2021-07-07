@@ -50,7 +50,7 @@
                     <div class="bar" style=" width: 65%; margin-left: 0%">
                       <div class="toggle toggle-min" tabindex="0" style="left: 0%">
                       </div>
-                      <div class="toggle toggle-max" tabindex="0"style="left: 100%">
+                      <div class="toggle toggle-max" tabindex="0" style="left: 100%">
                       </div>
                     </div>
                   </div>
@@ -129,10 +129,14 @@
                 </ul>
                 <div>
                   <p>
-                    <a class="sort-from-top-price" href="#"><span class="visually-hidden">по убыванию</span></a>
+                    <a class="sort-from-top-price" href="#">
+                      <span class="visually-hidden">по убыванию</span>
+                    </a>
                   </p>
                   <p>
-                    <a class="sort-from-low-price" href="#"><span class="visually-hidden">по возрастанию</span></a>
+                    <a class="sort-from-low-price" href="#">
+                      <span class="visually-hidden">по возрастанию</span>
+                    </a>
                   </p>
                 </div>
               </div>
@@ -212,7 +216,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts-wrapper container">
-          <img class="contacts-map" src="img/adress-map-background.png" width="1440" height="416" alr="Карта проезда">
+          <img class="contacts-map" src="img/adress-map-background.png" width="1440" height="416" alt="Карта проезда">
           <div class="contact-us">
             <p>nёrds design studio</p>
             <p>
@@ -230,20 +234,23 @@
           <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-         <ul class="social-links">
-          <li class="social-link">
-            <a href="https://vk.com/htmlacademy"><span class="visually-hidden">Вконтактe</span>
+        <ul class="social-links">
+          <li>
+            <a class="social-link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтактe</span>
               <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"/>
             </a>
           </li>
-          <li class="social-link">
-            <a href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Фейсбук</span>
+          <li>
+            <a class="social-link" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фейсбук</span>
               <img src="img/fb-icon.svg" width="12" height="22" alt="Вконтакте"/>
             </a>
           </li>
-          <li class="social-link">
-            <a href="https://www.instagram.com/htmlacademy/"><span class="visually-hidden">Инстаграм</span>
-              <img src="img/insta-icon.svg" width="21" height="21" alt="Инстраграм"//>
+          <li>
+            <a  class="social-link" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Инстаграм</span>
+              <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"/>
             </a>
           </li>
         </ul>
@@ -267,7 +274,9 @@
         </p>
         <button class="button feedback-button" type="submit">отправить</button>
       </form>
-      <button class="modal-close" type="button"><span class="visually-hidden">закрыть</span></button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">закрыть</span>
+      </button>
     </section>
   </body>
 </html>
