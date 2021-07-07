@@ -40,7 +40,6 @@
  --basic-gray-900: #283136;
  --basic-black-900: #000000;
  --basic-black-transparent-50:  rgba(0, 0, 0, 0.15);
- --basic-black-transparent-100: rgba(0, 1, 1, 0.1);
  --basic-black-transparent-150: rgba(0, 0, 0, 0.1);
  --basic-black-transparent-250: rgba(0, 0, 0, 0.25);
  --basic-black-transparent-300: rgba(0, 0, 0, 0.3);
@@ -237,7 +236,7 @@ img {
 }
 .our-features-link:active {
   background-color: var(--basic-red-700);
-  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-100);
+  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-150);
   color: var(--basic-white-transparent-300);
 }
 .our-features-slide {
@@ -720,7 +719,7 @@ img {
 .filter-button:active {
   color: var(--basic-black-transparent-300);
   background-color: var(--basic-gray-350);
-  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-100);
+  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-150);
 }
 .templates-wrapper {
   grid-column: 5 / -1;
@@ -771,29 +770,31 @@ img {
 .sort-list a:active {
   opacity: 1;
 }
+.sort-price-switcher {
+  display: flex;
+}
 .sort-from-top-price,
 .sort-from-low-price {
-  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
 }
 .sort-from-top-price::before,
 .sort-from-low-price::before {
-  position: absolute;
   content: "";
-  top: -16px;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
-  background-position: center;
   opacity: 0.2;
 }
 .sort-from-top-price::before {
-  left: 9px;
   background-image: url(../img/icon-down-dir.svg);
+  background-position: right center;
 }
 .sort-from-low-price::before {
-  left: 39px;
   background-image: url(../img/icon-down-dir.svg);
   transform: rotate(180deg);
+  background-position: left center;
 }
 .sort-from-top-price:hover::before,
 .sort-from-low-price:hover::before {
@@ -955,7 +956,7 @@ img {
 .pagination-item a:active {
   color: var(--basic-black-transparent-300);
   background-color: var(--basic-gray-350);
-  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-100);
+  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-150);
 }
 .pagination-item-current a,
 .pagination-item-current a:hover,
@@ -1078,7 +1079,7 @@ img {
 }
 .social-link:active {
   background-color: var(--basic-red-700);
-  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-100);
+  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-150);
 }
 .social-link:active img {
   opacity: 0.3;
