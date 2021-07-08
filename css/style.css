@@ -43,6 +43,7 @@
  --basic-black-transparent-150: rgba(0, 0, 0, 0.1);
  --basic-black-transparent-250: rgba(0, 0, 0, 0.25);
  --basic-black-transparent-300: rgba(0, 0, 0, 0.3);
+ --basic-black-transparent-400: rgba(0, 0, 0, 0.3);
  --basic-red-500: #fb565a;
  --basic-red-600: #e74246;
  --basic-red-700: #d7373b;
@@ -900,7 +901,8 @@ img {
 .templates-list-item div {
   opacity: 0;
 }
-.templates-list-item:hover div {
+.templates-list-item:hover div,
+.templates-list-item:focus-within div {
   opacity: 1;
 }
 .templates-list p {
@@ -1146,11 +1148,19 @@ img {
   border-color: var(--basic-red-600);
 }
 .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   width: 960px;
   height: 590px;
   padding-left: 100px;
   padding-right: 100px;
-  position: relative;
+  background-color: var(--basic-white-100);
+  box-shadow: 0 20px 40px var(--basic-black-transparent-400);
 }
 .text-field {
   margin:0;
