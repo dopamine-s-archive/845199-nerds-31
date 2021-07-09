@@ -643,6 +643,10 @@ img {
   cursor: pointer;
   user-select: none;
 }
+.radio-filter-input:focus + label::before,
+.checkbox-filter-input:focus + label::before {
+  outline: 2px solid;
+}
 .radio-filter-input:disabled + label {
   opacity: 0.3;
 }
