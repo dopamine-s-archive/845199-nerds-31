@@ -244,16 +244,17 @@
       const closing = document.querySelector(".modal-close");
       const name = popup.querySelector("#name-field");
       const email = popup.querySelector("#email-field");
-      const textarea = popup.querySelector("#form-textarea");
       const form = popup.querySelector("form");
       const namestorage = localStorage.getItem("name");
       const emailstorage = localStorage.getItem("email");
 
       let isStorageSupport = true;
-      let namestorage = "";
+      let storagecheckname = "";
+      let storagecheckemail= "";
 
       try {
-        namestorage = localStorage.getItem("name");
+        storagecheckname = localStorage.getItem("name");
+        storagecheckemail = localStorage.getItem("name");
       } catch (err) {
         isStorageSupport = false;
       }
