@@ -1166,6 +1166,9 @@ img {
   background-color: var(--basic-white-100);
   box-shadow: 0 20px 40px var(--basic-black-transparent-400);
 }
+.modal-show {
+  display: block;
+}
 .text-field {
   margin:0;
   margin-top: 0;

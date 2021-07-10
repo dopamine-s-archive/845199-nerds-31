@@ -6,8 +6,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!--<link rel="stylesheet" href="css/style.min.css">-->
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Дизайн-студия «Nёrds»</title>
   </head>
   <body class="page-body">
@@ -223,15 +222,15 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
         <p class="feedback-field text-field">
           <label for="name-field">Ваше имя:</label>
-          <input id="name-field" type="text" placeholder="Имя Фамилия" required/>
+          <input id="name-field" name="name-field" type="text" placeholder="Имя Фамилия" required/>
         </p>
         <p class="feedback-field text-field">
           <label for="email-field">Ваш email:</label>
-          <input id="email-field" type="email" placeholder="email@example.com" required/>
+          <input id="email-field" name="email-field" type="email" placeholder="email@example.com" required/>
         </p>
         <p class="feedback-textarea text-field">
           <label for="form-textarea">Текст письма:</label>
-          <textarea id="form-textarea" placeholder="В свободной форме" rows="5" required></textarea>
+          <textarea id="form-textarea" name="form-textarea" placeholder="В свободной форме" rows="5" required></textarea>
         </p>
         <button class="button feedback-button" type="submit">отправить</button>
       </form>
@@ -239,5 +238,27 @@
         <span class="visually-hidden">закрыть</span>
       </button>
     </section>
+    <script>
+      const popup = document.querySelector(".modal");
+      const link = document.querySelector(".contacts-button");
+      const closing = document.querySelector(".modal-close");
+      const name = popup.querySelector("#name-field");
+      const form = popup.querySelector("form");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        name.focus();
+      });
+
+      closing.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      });
+
+      form.addEventListener("submit", function () {
+        console.log("Отправляем форму");
+      })
+    </script>
   </body>
 </html>
