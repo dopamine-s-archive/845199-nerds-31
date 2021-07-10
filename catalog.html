@@ -274,17 +274,36 @@
         <span class="visually-hidden">закрыть</span>
       </button>
     </section>
-    <script>
+     <script>
       const popup = document.querySelector(".modal");
       const link = document.querySelector(".contacts-button");
       const closing = document.querySelector(".modal-close");
       const name = popup.querySelector("#name-field");
+      const email = popup.querySelector("#email-field");
+      const textarea = popup.querySelector("#form-textarea");
       const form = popup.querySelector("form");
+      const namestorage = localStorage.getItem("name");
+      const emailstorage = localStorage.getItem("email");
+
+      let isStorageSupport = true;
+      let namestorage = "";
+
+      try {
+        namestorage = localStorage.getItem("name");
+      } catch (err) {
+        isStorageSupport = false;
+      }
 
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("modal-show");
         name.focus();
+        if (namestorage) {
+          name.value = namestorage;
+        }
+        if (email.storage) {
+          email.value = emailstorage;
+        }
       });
 
       closing.addEventListener("click", function (evt) {
@@ -293,9 +312,16 @@
       });
 
       form.addEventListener("submit", function (evt) {
-        evt.preventDefault();
-        console.log("Отправляем форму");
-      })
+        if (!name.value || !email.value) {
+          evt.preventDefault();
+          console.log("Нужно ввести ваши данные");
+        } else {
+          if (isStorageSupport) {
+          localStorage.setItem("name", name.value);
+          localStorage.setItem("email", email.value);
+          }
+        }
+      });
     </script>
   </body>
 </html>
