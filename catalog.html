@@ -283,6 +283,7 @@
       const form = popup.querySelector("form");
       const namestorage = localStorage.getItem("name");
       const emailstorage = localStorage.getItem("email");
+      const textarea = popup.querySelector("textarea");
 
       let isStorageSupport = true;
       let storagecheckname = "";
@@ -298,10 +299,14 @@
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("modal-show");
-        name.focus();
+
         if (namestorage) {
           name.value = namestorage;
+          textarea.focus();
+        } else {
+          name.focus();
         }
+
         if (emailstorage) {
           email.value = emailstorage;
         }
@@ -310,6 +315,15 @@
       closing.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.remove("modal-show");
+      });
+
+      window.addEventListener("keydown", function (evt) {
+        if (evt.key === "Esc" || evt.key === "Escape") {
+          if(popup.classList.contains("modal-show")) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+          }
+        }
       });
 
       form.addEventListener("submit", function (evt) {
