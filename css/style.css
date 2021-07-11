@@ -39,7 +39,8 @@
  --basic-gray-600: #444444;
  --basic-gray-900: #283136;
  --basic-black-900: #000000;
- --basic-black-transparent-50:  rgba(0, 0, 0, 0.15);
+ --basic-black-transparent-50: rgba(0, 0, 0, 0.15);
+ --basic-black-transparent-100: rgba(0, 1, 1, 0.1);
  --basic-black-transparent-150: rgba(0, 0, 0, 0.1);
  --basic-black-transparent-250: rgba(0, 0, 0, 0.25);
  --basic-black-transparent-300: rgba(0, 0, 0, 0.3);
@@ -194,7 +195,7 @@ img {
 .our-features-slider {
   position: relative;
 }
-.our-feautures-list {
+.our-features-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -260,7 +261,7 @@ img {
 .our-features-slide-calculations {
   background-image: url('../img/index-slider-slide-calculations.png');
 }
-.our-features-slide-workstyle {
+.our-features-slide-work-style {
   background-image: url('../img/index-slider-slide-workstyle.png');
 }
 .our-features-buttons {
@@ -355,7 +356,7 @@ img {
 }
 .services-link:active {
   color: var(--basic-white-transparent-300);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-100);
 }
 .web .services-link {
   background-color: var(--basic-red-500);
@@ -924,7 +925,7 @@ img {
 }
 .template-item-button:active {
   background-color: var(--basic-red-700);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--basic-black-transparent-100);
 }
 .pagination-list {
   list-style: none;
